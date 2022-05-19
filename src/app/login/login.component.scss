@@ -1,0 +1,79 @@
+@import "../../assets/scss/variable.scss";
+
+.login_section {
+    padding: 3.5rem 0;
+    background-color: $grayColor1;
+    .login_card {
+        padding: 3rem 4rem;
+        border-radius: 20px;
+        box-shadow: 0px 0px 28px #0000000F;
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 2.5rem;
+            padding: 0;
+            position: relative;
+            border-bottom: 1px solid $grayColor2;
+            width: 80%;
+            li {
+                font-weight: $medium;
+                font-size: $font20;
+                a {
+                    font-weight: $medium;
+                    color: #000;
+                    padding: 1rem 1.5rem;
+                    min-width: 150px;
+                    margin: -1px;
+                    display: inherit;
+                    &.active {
+                        font-weight: $extrabold;
+                        border-bottom: 2px solid $primaryColor;
+                    }
+                    &:nth-child(1) {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+        .remember {
+            display: flex;
+            justify-content: space-between;
+            a {
+                font-size: 1rem;
+                font-weight: $medium;
+            }
+        }
+        .btn-primary {
+            height: 80px;
+            border-radius: 6px;
+            background-color: $primaryColor;
+            border-color: $primaryColor;
+            font-size: $font20;
+            font-weight: $bold;
+            color: $white;
+            width: 100%;
+            margin-bottom: 2.5rem;
+        }
+        .dont_acc {
+            font-weight: $medium;
+            margin-bottom: 0;
+            text-align: center;
+            a {
+                font-weight: $medium;
+            }
+        }
+        h6 {
+            font-size: $font20;
+            font-weight: $bold;
+        }
+        .d-flex {
+            label {
+                margin-right: 1.5rem;
+                &:nth-last-child(1) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

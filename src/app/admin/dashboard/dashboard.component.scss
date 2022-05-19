@@ -1,0 +1,15 @@
+.page-content {
+  display: inline-block;
+  width: 100%;
+  padding: 5rem 1rem 1rem 15rem;
+  overflow-x: hidden;
+  background-color: #f1f1f1;
+  min-height: 100vh;
+}
+.page_card {
+  box-shadow: 0 8px 17px 2px #dddddd24, 0 3px 14px 2px #dfdfdf1f,
+    0 5px 5px -3px #ebebeb33;
+  padding: 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}

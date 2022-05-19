@@ -1,0 +1,60 @@
+@import "../../assets/scss/variable.scss";
+
+footer {
+    background-color: $textBlack1;
+    padding: 3rem 0;
+    .logo {
+        img {
+            display: block;
+            margin: auto;
+            width: 75px;
+            margin-bottom: 1.5rem;
+        }
+    }
+    p {
+        font-size: $font16;
+        color: $grayColor;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        &.big-text {
+            font-size: $font18;
+            color: $white;
+        }
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 2.5rem auto;
+        padding: 0;
+        @include sm {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        li {
+            font-size: $font18;
+            @include sm {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 0.5rem;
+            }
+            a {
+                color: $white;
+            }
+        }
+    }
+    hr {
+        border-width: 2px;
+        border-style: dashed;
+    }
+    .app_download {
+        text-align: center;
+        margin-bottom: 3rem;
+        img {
+            height: 70px;
+            margin: 0 1rem;
+        }
+    }
+}

@@ -1,0 +1,947 @@
+@import "../../assets/scss/variable.scss";
+
+.hero_section {
+  background-color: $black;
+  position: relative;
+  height: 90vh;
+  padding-top: 12rem;
+
+  img {
+    width: 60%;
+    margin: auto;
+    display: block;
+  }
+
+  h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $white;
+    font-weight: $extrabold;
+    font-size: 5rem;
+    text-align: center;
+    text-decoration: underline;
+
+    @include sm {
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+.building_section {
+  background-color: $black;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 -0.5rem;
+    margin-bottom: 4rem;
+    padding: 0;
+
+    li {
+      width: 20%;
+      margin-bottom: 1rem;
+      padding: 0 0.5rem;
+
+      @include sm {
+        width: 33.33%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  h2 {
+    font-size: $font30;
+    font-style: italic;
+    color: $white;
+    text-align: center;
+    padding: 0 5rem;
+
+    @include sm {
+      padding: 0;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.who_we_are {
+  padding: 4rem 0;
+  background-color: $black;
+
+  .left_section {
+    img {
+      width: 100%;
+    }
+  }
+
+  .right_section {
+    padding-left: 3rem;
+    padding-top: 3rem;
+
+    @include sm {
+      padding-left: 0;
+    }
+
+    p {
+      color: $white;
+      font-size: $font16;
+      margin-bottom: 2rem;
+      line-height: 35px;
+
+      &.big-text {
+        font-size: $font20;
+        font-weight: $medium;
+      }
+    }
+
+    h2 {
+      font-size: $font36;
+      color: $primaryColor;
+      margin-bottom: 1.5rem;
+      font-weight: $bold;
+
+      span {
+        color: $white;
+        border-bottom: 2px solid $primaryColor;
+      }
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-right: 1rem;
+        width: 30%;
+
+        img {
+          height: 135px;
+
+          @include sm {
+            height: 65px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.why_choose_us {
+  padding: 5rem 0;
+  background-color: $black;
+
+  h2 {
+    font-size: $font36;
+    font-weight: $bold;
+    margin-bottom: 4rem;
+    color: $white;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 90px;
+      height: 2px;
+      background-color: $primaryColor;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    span {
+      color: $primaryColor;
+    }
+  }
+
+  .choose_card {
+    text-align: center;
+
+    img {
+      width: 70px;
+      margin: auto;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      font-size: $font20;
+      font-weight: $bold;
+      color: $white;
+      margin-bottom: 1rem;
+      line-height: 1;
+
+      span {
+        color: $primaryColor;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: $font16;
+      color: $white;
+    }
+  }
+}
+
+.register_now {
+  background-color: $primaryColor;
+  padding: 5rem 0;
+
+  .register_sec {
+    display: flex;
+    justify-content: space-between;
+
+    @include sm {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .register_left {
+      width: 100%;
+      text-align: center;
+
+      h2 {
+        color: $white;
+        font-size: $font30;
+        font-weight: $bold;
+      }
+
+      p {
+        font-size: $font20;
+        color: $white;
+      }
+    }
+
+    .btn-black {
+      background-color: #03101f;
+      color: $white;
+      height: 57px;
+      border-radius: 6px;
+      border-color: #03101f;
+      padding: 0 1rem;
+    }
+  }
+}
+
+.property_slider {
+  margin: 5rem auto 3rem;
+
+  .slide {
+    h3 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #03101f;
+      margin: 0 0 5px !important;
+
+      span {
+        color: #1ac7cf;
+      }
+
+      + p {
+        font-size: 30px;
+        color: #000000;
+        opacity: 1;
+        font-weight: 400;
+      }
+    }
+
+    .text-right {
+      margin-top: 2.5rem;
+      @include sm {
+        margin-top: -4rem;
+      }
+
+      a {
+        img {
+          width: 50px !important;
+          height: 50px !important;
+        }
+      }
+    }
+  }
+}
+
+.carousel_area {
+  margin: 1rem 0;
+  width: 100%;
+
+  .carousel.slide {
+    margin-top: 0rem;
+  }
+
+  .card {
+    border: none;
+    padding: 0 10px;
+
+    > img {
+      width: 100% !important;
+      height: 393px;
+    }
+
+    .card-body {
+      box-shadow: 0px 12px 18px #00000014;
+      width: 92%;
+      margin: -116px auto 0 12px;
+      border: none;
+      z-index: 10;
+      background-color: #fff;
+
+      h6 {
+        color: #1ac7cf;
+        line-height: 1;
+        margin: 0 0 8px;
+      }
+
+      h4 {
+        font-size: 20px;
+        color: #03101f;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0 0 1rem;
+      }
+
+      p {
+        font-size: 14px;
+        color: #8c8c8c;
+        line-height: 18px;
+        margin: 0 0 1rem;
+      }
+
+      .featured {
+        border-top: 1px dotted #8c8c8c;
+        padding-top: 1rem;
+
+        .row4 {
+          display: flex !important;
+          align-content: flex-start;
+          justify-content: space-between;
+          align-items: flex-start;
+          width: 100%;
+
+          div {
+            padding: 0 2px;
+
+            p {
+              font-size: 16px !important;
+              color: #000 !important;
+
+              img {
+                width: 23px;
+                height: 17px;
+              }
+            }
+          }
+        }
+      }
+
+      .cost {
+        padding-top: 1rem;
+        position: relative;
+
+        p {
+          font-size: 22px;
+          color: #1ac7cf;
+          font-weight: 700;
+        }
+
+        .view-btn {
+          position: absolute;
+          bottom: -20px;
+          right: -5px;
+          width: 117px;
+          height: 42px;
+          background-color: #1ac7cf;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 700;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+.slick-prev {
+  right: 182px !important;
+  top: -74px !important;
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.carousel-inner {
+  .carousel-item {
+    margin-bottom: 5rem;
+
+    .row {
+      flex-wrap: nowrap !important;
+
+      .col-md-4 {
+        flex: 0 0 37%;
+        max-width: 37%;
+      }
+    }
+  }
+}
+
+.carousel-indicators {
+  width: 100%;
+  margin: 0 auto;
+
+  li {
+    width: 100%;
+    height: 2px;
+    background-color: #8c8c8c;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  li.active {
+    margin-top: -5px;
+    height: 4px;
+    background-color: #1ac7cf;
+  }
+}
+
+.mortgage_calculator {
+  .container {
+    border: 1px solid #e6e4e4;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .calc_card {
+    background: url("../../assets/img/mortgage.png") 0% 0% no-repeat padding-box;
+
+    background-size: cover;
+    background-position: left;
+    width: 100%;
+    height: 309px;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+      text-align: center;
+      font-size: 35px;
+      color: #03101f;
+      letter-spacing: 0.7px;
+      font-weight: 700;
+      padding-top: 69px;
+      margin-bottom: 3rem;
+
+      span {
+        color: #1ac7cf;
+      }
+
+      u {
+        text-decoration: none;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #1ac7cf;
+      }
+    }
+
+    .blue-btn {
+      background-color: #1ac7cf;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      height: 60px;
+      width: 231px;
+      border-radius: 8px;
+
+      @include sm {
+        width: auto;
+      }
+    }
+  }
+}
+
+.find_prop {
+  .container {
+    border: 1px solid #e6e4e4;
+    .row {
+      div:nth-child(2) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .form-control {
+    background-color: #fff;
+  }
+
+  .bg_map {
+    background-image: url("../../assets/img/map-img.PNG");
+    background-size: cover;
+    height: 100%;
+    @include tab {
+      height: 400px !important;
+    }
+  }
+
+  .prop_card {
+    padding: 4rem 3rem;
+
+    .row {
+      div {
+        padding: 2px;
+      }
+    }
+
+    h4 {
+      font-size: 40px;
+      color: #f48f1d;
+      font-weight: 700;
+      margin-bottom: 2rem;
+
+      span {
+        color: #03101f;
+      }
+    }
+
+    .dropdown {
+      button {
+        width: 100%;
+        height: 72px;
+        background-color: #fff;
+        border: 1px solid #dcdcdc;
+        color: #000;
+        text-align: left;
+        margin-top: 2px;
+      }
+    }
+
+    .search_bar {
+      display: inline-block;
+      width: 100%;
+
+      .has-search .form-control {
+        padding-left: 1.375rem;
+        padding-right: 3.375rem;
+        position: relative;
+      }
+
+      .has-search .form-control-feedback {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 2.375rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: #aaa;
+        right: 20px;
+        top: 20px;
+      }
+    }
+
+    .setting {
+      img {
+        width: 40px;
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  .card {
+    border: none;
+    margin-bottom: 2rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .card-body {
+      box-shadow: 0px 12px 18px #00000014;
+      width: 90%;
+      margin: -96px auto 0;
+      border: none;
+      z-index: 10;
+      background-color: #fff;
+      padding: 10px 10px 0 !important;
+
+      h6 {
+        color: #1ac7cf;
+        line-height: 1;
+        margin: 0 0 8px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      h4 {
+        font-size: 15px;
+        color: #03101f;
+        font-weight: 700;
+        line-height: 1;
+        margin: 0 0 1rem;
+      }
+
+      p {
+        font-size: 10px;
+        color: #8c8c8c;
+        line-height: 18px;
+        margin: 0 0 1rem;
+      }
+      .row{
+        margin-left: 0;
+        margin-right: -15px;
+      }
+      
+      .featured {
+        border-top: 1px dotted #8c8c8c;
+        padding-top: 1rem;
+
+        .row4 {
+          display: flex !important;
+          align-content: flex-start;
+          justify-content: space-between;
+          align-items: flex-start;
+          width: 100%;
+
+          div {
+            padding: 0 2px;
+
+            p {
+              font-size: 12px !important;
+              color: #000 !important;
+
+              img {
+                width: 23px;
+                height: 17px;
+              }
+            }
+          }
+        }
+      }
+
+      .cost {
+        padding-top: 1rem;
+        position: relative;
+        padding-bottom: 0;
+
+        p {
+          font-size: 17px;
+          color: #1ac7cf;
+          font-weight: 700;
+        }
+
+        .view-btn {
+          position: absolute;
+          bottom: -2px;
+          right: 0px;
+          width: 92px;
+          height: 32px;
+          border-radius: 0;
+          background-color: #1ac7cf;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.app_feature {
+  background-color: #000;
+  padding: 6rem;
+
+  @include sm {
+    padding: 5rem 0;
+  }
+
+  h3 {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+
+    span {
+      color: #1ac7cf;
+    }
+  }
+
+  p {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .info-timeline {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    ul {
+      list-style: none;
+      margin: -50px 0 0;
+      padding: 0;
+
+      li {
+        color: #fff;
+        font-size: 20px;
+
+        @include sm {
+          font-size: 1rem;
+        }
+
+        span.timeline-circle {
+          position: relative;
+          border: 2px solid #1ac7cf;
+          border-radius: 100%;
+          width: 21px;
+          height: 21px;
+          line-height: 50px;
+          text-align: center;
+          margin-top: 65px;
+          margin-bottom: -5px;
+          background-color: #000;
+          z-index: 2;
+          display: inline-block;
+          margin-right: 1rem;
+        }
+      }
+
+      li.active {
+        color: #1ac7cf;
+        font-weight: 600;
+
+        span.timeline-circle {
+          background-color: #1ac7cf;
+          border: 4px solid #7ee3e9;
+        }
+      }
+
+      li:not(:first-of-type) {
+        span.timeline-circle::before {
+          position: absolute;
+          border: 1px solid #1ac7cf;
+          width: 0;
+          height: 50px;
+          display: block;
+          content: "";
+          left: 50%;
+          z-index: 1;
+          top: -62px;
+          margin-left: -1px;
+        }
+      }
+    }
+  }
+
+  .mobile_img {
+    margin-bottom: 1rem;
+
+    img {
+      width: 250px;
+      height: 501px;
+
+      @include sm {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .text {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    p {
+      font-size: 20px;
+      text-align: left;
+      color: #fff;
+    }
+  }
+}
+
+.modal-open .modal {
+  overflow: hidden !important;
+}
+
+.apply_loan_modal {
+  .modal-dialog {
+    max-width: 575px;
+  }
+}
+.modal {
+  .modal-content {
+    width: 100%;
+
+    .close {
+      top: -2rem;
+      right: -2rem;
+      font-size: 48px;
+      position: absolute;
+      color: #fff;
+    }
+
+    .modal-header {
+      .btn-apply {
+        width: 100%;
+        height: 70px;
+        background-color: #000;
+        border-radius: 0;
+        font-size: 30px;
+        font-weight: 600;
+        span {
+          color: $primaryColor;
+        }
+      }
+    }
+
+    .modal-body {
+      padding: 15px 30px;
+
+      .grey-box {
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 240px;
+        padding: 28px;
+        margin: 15px 0 20px;
+
+        .image {
+          text-align: center;
+          margin-bottom: 23px;
+
+          img {
+            width: 122px;
+            height: 112px;
+            margin: 0 auto;
+          }
+        }
+
+        h5 {
+          color: #03101f;
+          font-size: 22px;
+          font-weight: 600;
+          text-align: center;
+          line-height: 1;
+        }
+
+        p {
+          color: #9e9e9e;
+          font-size: 18px;
+          font-weight: 600;
+          text-align: center;
+          line-height: 1;
+        }
+      }
+
+      .wh-box {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+
+        p {
+          font-size: 16px;
+          color: #03101f;
+          text-align: center;
+          font-weight: 400;
+          margin-bottom: 3rem;
+        }
+
+        .btn-save {
+          width: 308px !important;
+          height: 59px !important;
+          margin: 0 auto !important;
+          border-radius: 6px;
+          background-color: #1ac7cf;
+        }
+      }
+    }
+  }
+}
+
+
+.mortgage_calc {
+  .modal-dialog {
+    max-width: 1001px !important;
+  }
+  .input-group-text{
+    width: 170px;
+  }
+  .form-control{
+    background-color: #fff;
+  }
+  .btn-save {
+    width: 20rem !important;
+    height: 3.5rem !important;
+    margin: 1rem auto 2rem;
+    border-radius: 6px;
+    background-color: #1ac7cf;
+  }
+}
+
+.advance-search {
+  h2{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    span{
+      color: #1AC7CF;
+
+    }
+  }
+  .modal-content{
+    padding: 2rem 4rem !important;
+    background-color: #000;
+    color: #D1D1D1;
+    border: 1px solid #D1D1D1;
+  }
+  .modal-dialog {
+    max-width: 80vw !important;
+  }
+  .input-group-text{
+    width: 170px;
+  }
+  .form-control{
+    background-color: transparent;
+    color: #fff;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+  .search-bar{
+    position: relative;
+    margin-top: -5px;
+    .fa-search{
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      color: #9e9e9e;
+     }
+    }
+  .btn-save {
+    width: 20rem !important;
+    height: 3.5rem !important;
+    margin: 1rem auto 2rem;
+    border-radius: 6px;
+    background-color: #1ac7cf;
+  }
+}

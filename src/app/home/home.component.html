@@ -1,0 +1,1088 @@
+<app-header></app-header>
+<section class="hero_section">
+  <div class="container">
+    <h1>We've Changed The Game</h1>
+    <img src="../../assets/img/building-2.png" alt="" />
+  </div>
+</section>
+<section class="building_section">
+  <div class="container">
+    <ul>
+      <li><img src="../../assets/img/building-1.png" alt="" /></li>
+      <li><img src="../../assets/img/rect-1.png" alt="" /></li>
+      <li><img src="../../assets/img/rect-2.png" alt="" /></li>
+      <li><img src="../../assets/img/rect-3.png" alt="" /></li>
+      <li><img src="../../assets/img/rect-4.png" alt="" /></li>
+      <li><img src="../../assets/img/rect-5.png" alt="" /></li>
+      <li><img src="../../assets/img/rect-6.png" alt="" /></li>
+      <li><img src="../../assets/img/rect-7.png" alt="" /></li>
+      <li><img src="../../assets/img/rect-8.png" alt="" /></li>
+      <li><img src="../../assets/img/rect-9.png" alt="" /></li>
+      <li><img src="../../assets/img/rect-10.png" alt="" /></li>
+      <li><img src="../../assets/img/rect-11.png" alt="" /></li>
+      <li><img src="../../assets/img/rect-12.png" alt="" /></li>
+      <li><img src="../../assets/img/rect-13.png" alt="" /></li>
+      <li><img src="../../assets/img/rect-6.png" alt="" /></li>
+    </ul>
+    <h2>
+      <strong>There are many variations</strong> of passages of Lorem Ipsum
+      available, but the majority have suffered alteration in some form, by
+      injected humour, or randomised words which don't look even slightly
+      believable
+    </h2>
+  </div>
+</section>
+<section class="who_we_are">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="left_section">
+          <img src="../../assets/img/building-3.png" alt="" />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="right_section">
+          <h2><span>Who</span> we are</h2>
+          <p class="big-text">
+            Mauris ac consectetur ante, dapibus gravida tellus. Nullam aliquet
+            eleifend dapibus. Cras sagittis, ex euismod lacinia tempor.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            quis ligula eu lectus vulputate porttitor sed feugiat nunc. Mauris
+            ac consectetur ante, dapibus gravida tellus. Nullam aliquet eleifend
+            dapibus.
+          </p>
+          <ul>
+            <li><img src="../../assets/img/icon-1.png" alt="" /></li>
+            <li><img src="../../assets/img/icon-2.png" alt="" /></li>
+            <li><img src="../../assets/img/icon-3.png" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Carousel -->
+
+<section class="carousel property_slider">
+  <div class="slide">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <h3 class="mb-3"><span>Featured</span> Properties</h3>
+          <p>Handpicked properties by our team.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container p-0">
+    <ngx-slick-carousel class="carousel_area" #slickModal="slick-carousel" [config]="slideConfig1" (init)="slickInit()"
+      (breakpoint)="breakpoint()" (afterChange)="afterChange()" (beforeChange)="beforeChange()">
+      <div class="ngxSlickItem" ngxSlickItem>
+        <div class="card">
+          <img class="img-fluid" alt="100%x280"
+            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+          <div class="card-body">
+            <h6>Modern Villa</h6>
+            <h4 class="card-title">Comfortable Villa in Green</h4>
+            <p class="card-text">
+              <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S Michigan
+              Ave,Chicago, IL, 60605.
+            </p>
+            <div class="featured">
+              <div class="row4">
+                <div class="col4">
+                  <p><img src="../../assets/img/bed.png" alt="bed" /> 05 bed</p>
+                </div>
+                <div class="col4">
+                  <p>
+                    <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                  </p>
+                </div>
+                <div class="col4">
+                  <p>
+                    <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                    sqft
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cost">
+              <div class="row">
+                <div class="col-12">
+                  <p>$600</p>
+                  <button class="btn btn-black view-btn">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ngxSlickItem" ngxSlickItem>
+        <div class="card">
+          <img class="img-fluid" alt="100%x280"
+            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+          <div class="card-body">
+            <h6>Modern Villa</h6>
+            <h4 class="card-title">Comfortable Villa in Green</h4>
+            <p class="card-text">
+              <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S Michigan
+              Ave,Chicago, IL, 60605.
+            </p>
+            <div class="featured">
+              <div class="row4">
+                <div class="col4">
+                  <p><img src="../../assets/img/bed.png" alt="bed" /> 05 bed</p>
+                </div>
+                <div class="col4">
+                  <p>
+                    <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                  </p>
+                </div>
+                <div class="col4">
+                  <p>
+                    <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                    sqft
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cost">
+              <div class="row">
+                <div class="col-12">
+                  <p>$600</p>
+                  <button class="btn btn-black view-btn">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ngxSlickItem" ngxSlickItem>
+        <div class="card">
+          <img class="img-fluid" alt="100%x280"
+            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+          <div class="card-body">
+            <h6>Modern Villa</h6>
+            <h4 class="card-title">Comfortable Villa in Green</h4>
+            <p class="card-text">
+              <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S Michigan
+              Ave,Chicago, IL, 60605.
+            </p>
+            <div class="featured">
+              <div class="row4">
+                <div class="col4">
+                  <p><img src="../../assets/img/bed.png" alt="bed" /> 05 bed</p>
+                </div>
+                <div class="col4">
+                  <p>
+                    <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                  </p>
+                </div>
+                <div class="col4">
+                  <p>
+                    <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                    sqft
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cost">
+              <div class="row">
+                <div class="col-12">
+                  <p>$600</p>
+                  <button class="btn btn-black view-btn">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ngxSlickItem" ngxSlickItem>
+        <div class="card">
+          <img class="img-fluid" alt="100%x280"
+            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+          <div class="card-body">
+            <h6>Modern Villa</h6>
+            <h4 class="card-title">Comfortable Villa in Green</h4>
+            <p class="card-text">
+              <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S Michigan
+              Ave,Chicago, IL, 60605.
+            </p>
+            <div class="featured">
+              <div class="row4">
+                <div class="col4">
+                  <p><img src="../../assets/img/bed.png" alt="bed" /> 05 bed</p>
+                </div>
+                <div class="col4">
+                  <p>
+                    <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                  </p>
+                </div>
+                <div class="col4">
+                  <p>
+                    <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                    sqft
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cost">
+              <div class="row">
+                <div class="col-12">
+                  <p>$600</p>
+                  <button class="btn btn-black view-btn">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ngxSlickItem" ngxSlickItem>
+        <div class="card">
+          <img class="img-fluid" alt="100%x280"
+            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+          <div class="card-body">
+            <h6>Modern Villa</h6>
+            <h4 class="card-title">Comfortable Villa in Green</h4>
+            <p class="card-text">
+              <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S Michigan
+              Ave,Chicago, IL, 60605.
+            </p>
+            <div class="featured">
+              <div class="row4">
+                <div class="col4">
+                  <p><img src="../../assets/img/bed.png" alt="bed" /> 05 bed</p>
+                </div>
+                <div class="col4">
+                  <p>
+                    <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                  </p>
+                </div>
+                <div class="col4">
+                  <p>
+                    <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                    sqft
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cost">
+              <div class="row">
+                <div class="col-12">
+                  <p>$600</p>
+                  <button class="btn btn-black view-btn">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="" ngxSlickItem>
+        <div class="card">
+          <img class="img-fluid" alt="100%x280"
+            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+          <div class="card-body">
+            <h6>Modern Villa</h6>
+            <h4 class="card-title">Comfortable Villa in Green</h4>
+            <p class="card-text">
+              <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S Michigan
+              Ave,Chicago, IL, 60605.
+            </p>
+            <div class="featured">
+              <div class="row4">
+                <div class="col4">
+                  <p><img src="../../assets/img/bed.png" alt="bed" /> 05 bed</p>
+                </div>
+                <div class="col4">
+                  <p>
+                    <img src="../../assets/img/bath.png" alt="bed" /> 04 Bath
+                  </p>
+                </div>
+                <div class="col4">
+                  <p>
+                    <img src="../../assets/img/Group2309.png" alt="bed" /> 587
+                    sqft
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="cost">
+              <div class="row">
+                <div class="col-12">
+                  <p>$600</p>
+                  <button class="btn btn-black view-btn">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+</section>
+
+<section class="why_choose_us">
+  <div class="container">
+    <h2>Why <span>Choose Us</span></h2>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="choose_card">
+          <img src="../../assets/img/house.svg" alt="" />
+          <h3>Find your <span>future home</span></h3>
+          <p>
+            If one person leaves, the chat session is terminated forever.
+            Messaging, on the other hand, more
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="choose_card">
+          <img src="../../assets/img/handshake.svg" alt="" />
+          <h3>Experienced <span>agents</span></h3>
+          <p>
+            If one person leaves, the chat session is terminated forever.
+            Messaging, on the other hand, more
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="choose_card">
+          <img src="../../assets/img/house-2.svg" alt="" />
+          <h3>Buy or rent <span>home</span></h3>
+          <p>
+            If one person leaves, the chat session is terminated forever.
+            Messaging, on the other hand, more
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="choose_card">
+          <img src="../../assets/img/house.svg" alt="" />
+          <h3>List your <span>property</span></h3>
+          <p>
+            If one person leaves, the chat session is terminated forever.
+            Messaging, on the other hand, more
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mortgage_calculator">
+  <div class="container">
+    <div class="calc_card">
+      <h1>
+        Mortgag<u>e <span>Cal</span></u><span>culator</span>
+      </h1>
+      <button class="btn btn-black blue-btn mr-5" data-toggle="modal" data-target="#mortgage_calculator">Mortgage
+        Calculator</button>
+      <button class="btn btn-black blue-btn" data-toggle="modal" data-target="#apply-loan-modal">
+        Loan Calculator
+      </button>
+    </div>
+  </div>
+</section>
+<section class="find_prop">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-sm-12">
+        <div class="prop_card">
+          <h4>Find <span>Properties</span></h4>
+          <form>
+            <div class="row">
+              <div class="col-4">
+                <div class="form-group dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-expanded="false">
+                    For Sale
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7">
+                <div class="search_bar">
+                  <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Location" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-1">
+                <div class="setting">
+                  <img src="../../assets/img/filter.png" alt="filter" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6" />
+                  <div class="card-body">
+                    <h6>Modern Villa</h6>
+                    <h4 class="card-title">Comfortable Villa in Green</h4>
+                    <p class="card-text">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S
+                      Michigan Ave,Chicago, IL, 60605.
+                    </p>
+                    <div class="featured">
+                      <div class="row4">
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bed.png" alt="bed" /> 05
+                            bed
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bath.png" alt="bed" /> 04
+                            Bath
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/Group2309.png" alt="bed" />
+                            587 sqft
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cost">
+                      <div class="row">
+                        <div class="col-12">
+                          <p>$600</p>
+                          <button class="btn btn-black view-btn">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6" />
+                  <div class="card-body">
+                    <h6>Modern Villa</h6>
+                    <h4 class="card-title">Comfortable Villa in Green</h4>
+                    <p class="card-text">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S
+                      Michigan Ave,Chicago, IL, 60605.
+                    </p>
+                    <div class="featured">
+                      <div class="row4">
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bed.png" alt="bed" /> 05
+                            bed
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bath.png" alt="bed" /> 04
+                            Bath
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/Group2309.png" alt="bed" />
+                            587 sqft
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cost">
+                      <div class="row">
+                        <div class="col-12">
+                          <p>$600</p>
+                          <button class="btn btn-black view-btn">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6" />
+                  <div class="card-body">
+                    <h6>Modern Villa</h6>
+                    <h4 class="card-title">Comfortable Villa in Green</h4>
+                    <p class="card-text">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S
+                      Michigan Ave,Chicago, IL, 60605.
+                    </p>
+                    <div class="featured">
+                      <div class="row4">
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bed.png" alt="bed" /> 05
+                            bed
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bath.png" alt="bed" /> 04
+                            Bath
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/Group2309.png" alt="bed" />
+                            587 sqft
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cost">
+                      <div class="row">
+                        <div class="col-12">
+                          <p>$600</p>
+                          <button class="btn btn-black view-btn">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="card">
+                  <img class="img-fluid" alt="100%x280"
+                    src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6" />
+                  <div class="card-body">
+                    <h6>Modern Villa</h6>
+                    <h4 class="card-title">Comfortable Villa in Green</h4>
+                    <p class="card-text">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i> 808 S
+                      Michigan Ave,Chicago, IL, 60605.
+                    </p>
+                    <div class="featured">
+                      <div class="row4">
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bed.png" alt="bed" /> 05
+                            bed
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/bath.png" alt="bed" /> 04
+                            Bath
+                          </p>
+                        </div>
+                        <div class="col4">
+                          <p>
+                            <img src="../../assets/img/Group2309.png" alt="bed" />
+                            587 sqft
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cost">
+                      <div class="row">
+                        <div class="col-12">
+                          <p>$600</p>
+                          <button class="btn btn-black view-btn">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="bg_map" id="map"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="app_feature">
+  <div class="container">
+    <h3>App <span>Feature</span></h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="row">
+      <div class="col-7 col-md-7 col-lg-4">
+        <div class="info-timeline">
+          <ul>
+            <li><span class="timeline-circle"></span> Get Property</li>
+            <li class="active">
+              <span class="timeline-circle"></span> Request to agent
+            </li>
+            <li><span class="timeline-circle"></span> User</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-5 col-md-5 col-lg-4">
+        <div class="mobile_img">
+          <img src="../../assets/img/mobile.png" alt="mobile image" />
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="text">
+          <p>
+            Enjoy your ride. Follow all traffic rules, stick to the streets &
+            bike lanes where legally permitted. Wear a helmet and respect others
+            sharing the road.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="register_now">
+  <div class="container">
+    <div class="register_sec">
+      <div class="register_left">
+        <h2>Become a Real Estate Agent</h2>
+        <p>We only work with the best companies around the globe</p>
+      </div>
+      <button class="btn btn-black" data-toggle="modal" data-target="#advance-search">
+        Register Now
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- apply now -->
+<div class="modal fade apply_loan_modal" id="apply-loan-modal" tabindex="-1" role="dialog"
+  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-header" style="padding: 10px">
+        <button type="button" class="btn btn-primary btn-apply">
+          Apply <span>Now</span>
+        </button>
+      </div>
+      <div class="modal-body" style="padding: 15px">
+        <div class="grey-box">
+          <div class="image">
+            <img src="../../assets/img/building-1.png" alt="image" />
+          </div>
+          <h5>Thomas Powell</h5>
+          <p>thomaspowell@gmail.com</p>
+        </div>
+        <div class="wh-box">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            quis ligula eu lectus vulputate porttitor sed feugiat nunc. Mauris
+            ac consectetur ante, dapibus gravida tellus. Nullam aliquet eleifend
+            dapibus.
+          </p>
+          <a routerLink="/login" fragment="register">
+            <button type="button" class="btn btn-primary btn-save">
+              Get a Loan
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Mortgage Calculator -->
+
+<div class="modal fade mortgage_calc" id="mortgage_calculator" tabindex="-1" role="dialog"
+  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-header" style="padding: 10px">
+        <button type="button" class="btn btn-primary btn-apply">
+          Mortgage <span>Calculator</span>
+        </button>
+      </div>
+      
+      <div class="modal-body mb-2" style="padding: 15px">
+        <form>
+          <div class="form-row align-items-center">
+            <div class="col-6">
+              <label class="sr-only" for="inlineFormInputGroup">Home Value</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Home Value</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="$500000">
+              </div>
+            </div>
+            <div class="col-6">
+              <label class="sr-only" for="inlineFormInputGroup">Down Payment</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Down Payment</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="$5000">
+              </div>
+            </div>
+            <div class="col-6">
+              <label class="sr-only" for="inlineFormInputGroup">Loan Amount</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Loan Amount</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="$2000">
+              </div>
+            </div>
+            <div class="col-6">
+              <label class="sr-only" for="inlineFormInputGroup">Interest Rate</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Interest Rate</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="9.32%">
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a routerLink="/login" fragment="register">
+              <button type="button" class="btn btn-primary btn-save mb-4 mt-3">
+                Find Best Rate
+              </button>
+            </a>
+          </div>
+        </form>
+        <form>
+          <div class="form-row align-items-center">
+            <div class="col-6">
+              <label class="sr-only" for="inlineFormInputGroup">Loan Term (year)</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Loan Term (year)</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="$500000">
+              </div>
+            </div>
+            <div class="col-6">
+              <label class="sr-only" for="inlineFormInputGroup">Start Date</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Start Date</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="15 may 2021">
+              </div>
+            </div>
+            <div class="col-6">
+              <label class="sr-only" for="inlineFormInputGroup">Property Tax (year)</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Property Tax (year)</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="$2000">
+              </div>
+            </div>
+            <div class="col-6">
+              <label class="sr-only" for="inlineFormInputGroup">PMI</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">PMI</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="0.5%">
+              </div>
+            </div>
+            <div class="col-6">
+              <label class="sr-only" for="inlineFormInputGroup">Home Ins (year)</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Home Ins (year)</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="$2000">
+              </div>
+            </div>
+            <div class="col-6">
+              <label class="sr-only" for="inlineFormInputGroup">Monthly HOA</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Monthly HOA</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="$0">
+              </div>
+            </div>
+            <div class="col-6">
+              <label class="sr-only" for="inlineFormInputGroup">Loan Type</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">Loan Type</div>
+                </div>
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="USDAs">
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a routerLink="/login" fragment="register">
+              <button type="button" class="btn btn-primary btn-save mb-0 mt-3">
+                Calculate
+              </button>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- advance search -->
+
+<div class="modal advance-search" id="advance-search" tabindex="-1" role="dialog"
+  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body mb-2" style="padding: 15px">
+        <form>
+          <div class="form-row align-items-center">
+            <div class="col-3">
+              <div class="form-group mt-3">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>For Sale</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-7">
+              <div class="input-group search-bar">
+                <input class="form-control border-end-0 border" type="text" placeholder="Location"
+                  id="example-search-input">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="setting">
+                <img src="../../assets/img/filter-white.png" alt="filter" />
+              </div>
+            </div>
+          </div>
+          <h2>Advance <span>Search</span></h2>
+          <div class="form-row align-items-center">
+            <div class="col-6">
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Property Status</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Property Type</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Min Price</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Max Price</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-row align-items-center">
+            <div class="col">
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Property Age</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Select Beds</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Select Baths</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Min Sqft</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Min Sqft</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-row align-items-center">  
+            <div class="col-3">
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Min Lot Size</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <h2>Select <span>Amenities</span></h2>
+          <div class="form-row align-items-center">
+            <div class="col-4">
+              <div class="mb-2 mr-sm-2">
+                <label class="container_c"> Internet
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark_c"></span>
+                </label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="mb-2 mr-sm-2">
+                <label class="container_c"> Air Conditioning
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark_c"></span>
+                </label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="mb-2 mr-sm-2">
+                <label class="container_c"> Disposal
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark_c"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-row align-items-center">
+            <div class="col-4">
+              <div class="mb-2 mr-sm-2">
+                <label class="container_c"> Garage
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark_c"></span>
+                </label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="mb-2 mr-sm-2">
+                <label class="container_c"> Pool
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark_c"></span>
+                </label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="mb-2 mr-sm-2">
+                <label class="container_c"> Fireplace
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark_c"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-row align-items-center">
+            <div class="col-4">
+              <div class="mb-2 mr-sm-2">
+                <label class="container_c"> Elevator
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark_c"></span>
+                </label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="mb-2 mr-sm-2">
+                <label class="container_c"> Dishwasher
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark_c"></span>
+                </label>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="mb-2 mr-sm-2">
+                <label class="container_c"> Balcony
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark_c"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-right">
+            <a routerLink="/login" fragment="register">
+              <button type="button" class="btn btn-primary btn-save mb-4 mt-3">
+                Search
+              </button>
+            </a>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,115 @@
+@import "../../assets/scss/variable.scss";
+
+
+.navbar-toggler-icon {
+  background-image: url('../../assets/img/menu.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.real-navbar {
+  background-color: $textBlack1;
+  .container {
+    max-width: 100%;
+  }
+  .navbar-brand {
+    img {
+      width: 70px;
+
+      @include sm {
+        width: 40px;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end;
+
+    .pre_approved {
+      color: white;
+      text-transform: $uppercase;
+      font-size: $font16;
+      font-weight: $medium;
+      text-align: center;
+      margin-right: 2rem;
+
+      @include sm {
+        margin-right: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      span {
+        font-size: $font12;
+      }
+    }
+
+    .navbar-nav {
+      li {
+        a {
+          color: white;
+          text-transform: $uppercase;
+          font-size: $font16;
+          font-weight: $medium;
+          height: 50px;
+          line-height: 50px;
+          padding: 0 0.75rem;
+
+          .search_icon {
+            width: 20px;
+          }
+        }
+
+        &.signup-btn {
+          background-color: $primaryColor;
+          border: 1px solid $primaryColor;
+          color: $white;
+          height: 50px;
+          min-width: 120px;
+          line-height: 50px;
+          text-align: center;
+          border-radius: 5px;
+          margin-left: 1rem;
+
+          a {
+            padding: 0;
+          }
+        }
+
+        &.login-btn {
+          background-color: transparent;
+          border: 1px solid $primaryColor;
+          height: 50px;
+          min-width: 120px;
+          line-height: 50px;
+          text-align: center;
+          border-radius: 5px;
+          margin-left: 1rem;
+          @include sm {
+            margin-bottom: 1rem;
+          }
+
+          a {
+            padding: 0;
+            color: $primaryColor;
+          }
+        }
+
+        .dropdown-menu {
+          background-color: $textBlack1;
+          padding: 0 0.5rem;
+
+          a {
+            border-bottom: 1px solid #ffffff82;
+
+            &:nth-last-child(1) {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
