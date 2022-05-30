@@ -1,0 +1,85 @@
+@import "../../../assets/scss/variable.scss";
+
+.nav-tabs {
+  border-bottom: none;
+  .nav-link {
+    color: #1f1d66;
+    background: $white;
+    border-radius: 15px 15px 0px 0px;
+    margin-right: 15px;
+    padding: 15px 25px;
+    font-weight: $bold;
+    border: 1px solid rgba(61, 57, 137, 0.1);
+  }
+  .nav-link.active {
+    color: $white;
+    background: #1e85da;
+    border-radius: 15px 15px 0px 0px;
+    padding: 15px 25px;
+  }
+  .nav-link:hover {
+    border-color: $white;
+  }
+}
+
+.tab-content {
+  background-color: $white;
+  border-radius: 0px 15px 15px 15px;
+  box-shadow: 0px 4px 10px rgba(61, 57, 137, 0.05);
+  padding: 15px;
+  border: 1px solid rgba(61, 57, 137, 0.1);
+  .tab-pane table {
+    width: 100%;
+    thead {
+      th {
+        padding: 25px 10px;
+        text-transform: uppercase;
+      }
+    }
+    tbody {
+      box-shadow: 0px 4px 10px rgba(61, 57, 137, 0.05);
+      border: 1px solid #ddd;
+      tr {
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0px;
+        th {
+          padding: 25px 10px;
+        }
+        td {
+          padding: 25px 10px;
+        }
+      }
+      tr:last-child {
+        border-bottom: none;
+      }
+      th p.ser_no {
+        display: inherit;
+        align-items: center;
+        vertical-align: middle;
+        border-radius: 8px;
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        background-color: #ececf9;
+      }
+      th span.img_radious img {
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        margin-left: 5px;
+        margin-right: 10px;
+      }
+      th .provider_text {
+        font-size: 12px;
+        color: #626262;
+      }
+    }
+  }
+}
+
+.page_card {
+  box-shadow: 0 8px 17px 2px #dddddd24, 0 3px 14px 2px #dfdfdf1f, 0 5px 5px -3px #ebebeb33;
+  padding: 1rem;
+  background-color: $white;
+  margin-bottom: 1rem;
+}

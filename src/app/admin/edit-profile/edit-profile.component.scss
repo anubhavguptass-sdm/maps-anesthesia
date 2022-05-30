@@ -1,0 +1,33 @@
+@import "../../../assets/scss/variable.scss";
+
+.profile-card {
+    border-radius: 15px;
+    padding: 1rem;
+    .profile-img {
+        border-radius: 50%;
+        width: 85px;
+        height: 85px;
+    }
+    .upload-img {
+        position: relative;    
+        width: 25px;
+        overflow: hidden;
+        top: -1.5rem;
+        right: -3.5rem;
+        cursor: pointer;
+        input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            opacity: 0;
+        }
+        img {
+            width: 25px;
+        }
+    }
+}
+.card {
+    margin-bottom: 15px;
+    border-radius: 1rem;
+}

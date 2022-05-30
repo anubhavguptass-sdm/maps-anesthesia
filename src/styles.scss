@@ -1,53 +1,53 @@
 @import "../src/assets/scss/variable.scss";
 
 @font-face {
-  font-family: 'SF Pro Display';
-  src: url('assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF');
+  font-family: "SF Pro Display";
+  src: url("assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF");
   font-weight: 200;
   font-style: italic;
 }
 @font-face {
-  font-family: 'SF Pro Display';
-  src: url('assets/fonts/SFPRODISPLAYTHINITALIC.OTF');
+  font-family: "SF Pro Display";
+  src: url("assets/fonts/SFPRODISPLAYTHINITALIC.OTF");
   font-weight: 300;
   font-style: italic;
 }
 @font-face {
-  font-family: 'SF Pro Display';
-  src: url('assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF');
+  font-family: "SF Pro Display";
+  src: url("assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF");
   font-weight: 600;
   font-style: italic;
 }
 @font-face {
-  font-family: 'SF Pro Display';
-  src: url('assets/fonts/SFPRODISPLAYREGULAR.OTF');
+  font-family: "SF Pro Display";
+  src: url("assets/fonts/SFPRODISPLAYREGULAR.OTF");
   font-weight: 400;
 }
 @font-face {
-  font-family: 'SF Pro Display';
-  src: url('assets/fonts/SFPRODISPLAYMEDIUM.OTF');
+  font-family: "SF Pro Display";
+  src: url("assets/fonts/SFPRODISPLAYMEDIUM.OTF");
   font-weight: 500;
 }
 @font-face {
-  font-family: 'SF Pro Display';
-  src: url('assets/fonts/SFPRODISPLAYLIGHTITALIC.OTF');
+  font-family: "SF Pro Display";
+  src: url("assets/fonts/SFPRODISPLAYLIGHTITALIC.OTF");
   font-weight: 300;
   font-style: italic;
 }
 @font-face {
-  font-family: 'SF Pro Display';
-  src: url('assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF');
+  font-family: "SF Pro Display";
+  src: url("assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF");
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
-  font-family: 'SF Pro Display';
-  src: url('assets/fonts/SFPRODISPLAYBOLD.OTF');
+  font-family: "SF Pro Display";
+  src: url("assets/fonts/SFPRODISPLAYBOLD.OTF");
   font-weight: 700;
 }
 
 body {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-size: $font14;
   color: $primaryColor;
   background-color: $grayColor1;
@@ -69,7 +69,7 @@ h6,
 p,
 a,
 label {
-  font-family: 'SF Pro Display';
+  font-family: "SF Pro Display";
   font-weight: $normal;
 }
 
@@ -133,7 +133,8 @@ p {
 a {
   color: $primaryColor;
 }
-td, th {  
+td,
+th {
   opacity: 0.75;
 }
 strong {
@@ -144,11 +145,12 @@ strong {
 }
 
 .form-control {
-  border: 1px solid #dcdcdc;
-  background-color: $grayColor3;
-  height: 72px;
-  padding: 1rem 1.5rem;
-  border-radius: 0;
+  background: $white;
+  border: 1px solid rgba(61, 57, 137, 0.1);
+  box-shadow: 0px 4px 10px rgba(61, 57, 137, 0.05);
+  border-radius: 10px;
+  height: 60px;
+  padding: 0.75rem 1.5rem;
 }
 
 .input-icon {
@@ -307,9 +309,9 @@ strong {
   top: 3px;
   left: 3px;
   width: 10px;
-  height: 10px; 
-	border-radius: 50%;
-	background: white;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
 }
 /* Custom Radio */
 
@@ -330,11 +332,15 @@ strong {
     font-family: monospace;
   }
 }
-.btn {  
+.btn {
   font-size: 1rem;
   font-weight: $medium;
   padding: 10px 20px;
   border-radius: 8px;
+  text-transform: uppercase;
+}
+.border-radius-50 {
+  border-radius: 50px;
 }
 .btn-primary {
   background-color: $tertiaryColor;
@@ -345,6 +351,32 @@ strong {
   &:hover {
     background-color: $primaryColor;
     border-color: $primaryColor;
+  }
+}
+.btn-primary-outline {
+  background-color: $white;
+  border-color: $tertiaryColor;
+  color: $tertiaryColor;
+
+  &:focus,
+  &:hover {
+    background-color: $tertiaryColor;
+    border-color: $tertiaryColor;
+    color: $white;
+  }
+}
+.btn-gray-outline {
+  background-color: $white;
+  border-color: $grayColor;
+  color: $textBlack1;
+  border-radius: 50px;
+  text-transform: capitalize;
+
+  &:focus,
+  &:hover {
+    background-color: $textBlack1;
+    border-color: $grayColor;
+    color: $white;
   }
 }
 .carousel_area {
@@ -411,7 +443,7 @@ strong {
   }
   h2 {
     font-size: 22px;
-    color: #130F26;
+    color: #130f26;
     font-weight: 600;
   }
 }
