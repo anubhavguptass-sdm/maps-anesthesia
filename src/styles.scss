@@ -1,10 +1,56 @@
 @import "../src/assets/scss/variable.scss";
 
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('assets/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('assets/fonts/SFPRODISPLAYTHINITALIC.OTF');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('assets/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('assets/fonts/SFPRODISPLAYREGULAR.OTF');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('assets/fonts/SFPRODISPLAYMEDIUM.OTF');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('assets/fonts/SFPRODISPLAYLIGHTITALIC.OTF');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('assets/fonts/SFPRODISPLAYHEAVYITALIC.OTF');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('assets/fonts/SFPRODISPLAYBOLD.OTF');
+  font-weight: 700;
+}
+
 body {
-  font-family: $fontFamily;
-  font-size: $font16;
+  font-family: 'SF Pro Display';
+  font-size: $font14;
   color: $primaryColor;
-  background-color: #fff;
+  background-color: $grayColor1;
   font-weight: $normal;
 }
 
@@ -23,7 +69,7 @@ h6,
 p,
 a,
 label {
-  font-family: $fontFamily;
+  font-family: 'SF Pro Display';
   font-weight: $normal;
 }
 
@@ -79,9 +125,16 @@ h6 {
   font-size: 18px;
   line-height: 24px;
 }
-
+p {
+  font-size: 16px;
+  color: $primaryColor;
+  opacity: 0.75;
+}
 a {
   color: $primaryColor;
+}
+td, th {  
+  opacity: 0.75;
 }
 strong {
   font-weight: $bold;
@@ -194,6 +247,72 @@ strong {
 
 /* Custom Checkbox */
 
+/* Custom Radio */
+.container_r {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container_r input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark_r {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: $white;
+  border-radius: 50%;
+  border: 2px solid $primaryColor;
+}
+
+/* On mouse-over, add a grey background color */
+.container_r:hover input ~ .checkmark_r {
+  background-color: $grayColor1;
+}
+
+/* When the radio button is checked, add a blue background */
+.container_r input:checked ~ .checkmark_r {
+  background-color: $primaryColor;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark_r:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container_r input:checked ~ .checkmark_r:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container_r .checkmark_r:after {
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px; 
+	border-radius: 50%;
+	background: white;
+}
+/* Custom Radio */
+
 .breadcrumb-nav {
   .breadcrumb {
     background-color: #fff;
@@ -211,20 +330,21 @@ strong {
     font-family: monospace;
   }
 }
-
-.btn-primary {
-  background-color: #1ac7cf;
-  border-color: #1ac7cf;
-  border-radius: 8px;
-  padding: 1rem;
-  color: #fff;
+.btn {  
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: $medium;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+.btn-primary {
+  background-color: $tertiaryColor;
+  border-color: $tertiaryColor;
+  color: $white;
 
   &:focus,
   &:hover {
-    background-color: #1ac7cf;
-    border-color: #1ac7cf;
+    background-color: $primaryColor;
+    border-color: $primaryColor;
   }
 }
 .carousel_area {
@@ -279,42 +399,19 @@ strong {
   background-color: #fff;
 }
 
-// .swiper-slide:nth-child(1n) {
-//   background-color: rgb(206, 17, 17);
-// }
-
-// .swiper-slide:nth-child(2n) {
-//   background-color: rgb(0, 140, 255);
-// }
-
-// .swiper-slide:nth-child(3n) {
-//   background-color: rgb(10, 184, 111);
-// }
-
-// .swiper-slide:nth-child(4n) {
-//   background-color: rgb(211, 122, 7);
-// }
-
-// .swiper-slide:nth-child(5n) {
-//   background-color: rgb(118, 163, 12);
-// }
-
-// .swiper-slide:nth-child(6n) {
-//   background-color: rgb(180, 10, 47);
-// }
-
-// .swiper-slide:nth-child(7n) {
-//   background-color: rgb(35, 99, 19);
-// }
-
-// .swiper-slide:nth-child(8n) {
-//   background-color: rgb(0, 68, 255);
-// }
-
-// .swiper-slide:nth-child(9n) {
-//   background-color: rgb(218, 12, 218);
-// }
-
-// .swiper-slide:nth-child(10n) {
-//   background-color: rgb(54, 94, 77);
-// }
+.page-content {
+  display: inline-block;
+  width: 100%;
+  padding: 5rem 1rem 1rem 15rem;
+  overflow-x: hidden;
+  background-color: #f9f9ff;
+  min-height: 100vh;
+  @include sm {
+    padding: 5rem 1rem 1rem 6rem;
+  }
+  h2 {
+    font-size: 22px;
+    color: #130F26;
+    font-weight: 600;
+  }
+}

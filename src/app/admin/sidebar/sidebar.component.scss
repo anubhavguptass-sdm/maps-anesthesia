@@ -1,3 +1,5 @@
+@import "../../../assets/scss/variable.scss";
+
 .page-wrapper .sidebar-wrapper,
 .sidebar-wrapper .sidebar-brand > a,
 .sidebar-wrapper .sidebar-dropdown > a:after,
@@ -92,6 +94,9 @@
   padding: 24px 20px 0 20px;
   display: flex;
   align-items: center;
+  @include sm {
+    padding: 15px 5px 0 5px;
+  }
 }
 
 .sidebar-wrapper .sidebar-brand > img {
@@ -99,6 +104,9 @@
   width: 110px;
   display: block;
   margin: auto;
+  @include sm {
+    width: 100%;
+  }
 }
 
 .sidebar-wrapper .sidebar-brand #close-sidebar {
@@ -124,12 +132,14 @@
   width: 100%;
   text-decoration: none;
   position: relative;
-  padding: 18px 15px;
+  padding: 15px 10px;
 }
 
 .sidebar-wrapper .sidebar-menu ul li a img {
   margin-right: 20px;
-  width: 18px;
+  width: 20px;
+  filter: invert(1) brightness(2);
+  border-radius: 0;
 }
 
 .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu ul {
@@ -164,6 +174,11 @@
 .sidebar-wrapper .sidebar-menu.sidebar-menu-footer {
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
+  img {
+    filter: none !important;
+  }
 }
 
 /*--------------------------page-content-----------------------------*/
@@ -236,6 +251,9 @@
   position: relative;
   background-color: #f9f9ff;
 }
+.chiller-theme .sidebar-wrapper .sidebar-menu ul li.active a img {
+  filter: none;
+}
 
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li.active::after {
   content: "";
@@ -245,6 +263,7 @@
   width: 25px;
   height: 25px;
   background-color: #f9f9ff;
+  display: none;
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li.active a {
@@ -254,12 +273,14 @@
 .chiller-theme .sidebar-wrapper .sidebar-brand > a,
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li a {
   color: #ffffff;
-  height: 60px;
+  height: 54px;
   width: 190px;
   margin: auto;
   display: block;
   border-radius: 4px;
   font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02rem;
 }
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li a em {
   margin-right: 0.75rem;
@@ -399,6 +420,8 @@
   align-items: center;
   p {
     margin: 0;
+    font-weight: $bold;
+    opacity: 1;
     span {
       color: #60C6FF;
     }
@@ -495,7 +518,7 @@
 
   .chiller-theme .sidebar-wrapper .sidebar-menu ul li a:hover,
   .chiller-theme .sidebar-wrapper .sidebar-menu ul li.active a {
-    background: transparent linear-gradient(90deg, #17cfe0 0%, #17cfe0cc 100%) 0% 0% no-repeat padding-box;
+    // background: transparent linear-gradient(90deg, #17cfe0 0%, #17cfe0cc 100%) 0% 0% no-repeat padding-box;
     border-radius: 4px;
     opacity: 1;
   }
@@ -552,7 +575,8 @@
   }
 
   .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown_menu {
-    left: -160px;
+    left: initial;
+    right: 0;
     position: absolute;
   }
 }
