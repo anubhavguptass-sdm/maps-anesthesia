@@ -1,14 +1,138 @@
 <app-sidebar></app-sidebar>
 <main class="page-content">
-  <div class="page_card">
-
-    <label class="toggle_switch">
-      <input type="checkbox" checked>
-      <span class="toggle_slider toggle_round"></span>
-    </label>
-
-    <button data-toggle="modal" data-target="#confirmDelete" type="button" class="btn btn-primary">Delete
-    </button>
-
+  <h2>Billing</h2>
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#Payment" role="tab" aria-controls="nav-home" aria-selected="true">Payment Due</a>
+      <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#Paid" role="tab" aria-controls="nav-profile" aria-selected="false">Paid</a>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="Payment" role="tabpanel" aria-labelledby="nav-home-tab">
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Name</th>
+              <th>Clinic</th>
+              <th>Date</th>
+              <th>Date</th>
+              <th>Payment Mode</th>
+              <th>Payment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th><p class="ser_no">1</p></th>
+              <th><span class="img_radious"><img src="../../../assets/img/profile-image.png" alt=""></span> Albert Flores</th>
+              <td>Parikh Clinic test</td>
+              <td>03-18-2022</td>
+              <td>03-18-2022</td>
+              <td>Ach</td>
+              <td class="text-danger">$205.00</td>
+            </tr>
+            <tr>
+              <th><p class="ser_no">2</p></th>
+              <th><span class="img_radious"><img src="../../../assets/img/profile-image.png" alt=""></span> Albert Flores</th>
+              <td>Parikh Clinic test</td>
+              <td>03-18-2022</td>
+              <td>03-18-2022</td>
+              <td>Ach</td>
+              <td class="text-danger">$205.00</td>
+            </tr>
+            <tr>
+              <th><p class="ser_no">3</p></th>
+              <th><span class="img_radious"><img src="../../../assets/img/profile-image.png" alt=""></span> Albert Flores</th>
+              <td>Parikh Clinic test</td>
+              <td>03-18-2022</td>
+              <td>03-18-2022</td>
+              <td>Ach</td>
+              <td class="text-danger">$205.00</td>
+            </tr>
+            <tr>
+              <th><p class="ser_no">4</p></th>
+              <th><span class="img_radious"><img src="../../../assets/img/profile-image.png" alt=""></span> Albert Flores</th>
+              <td>Parikh Clinic test</td>
+              <td>03-18-2022</td>
+              <td>03-18-2022</td>
+              <td>Ach</td>
+              <td class="text-danger">$205.00</td>
+            </tr>
+            <tr>
+              <th><p class="ser_no">5</p></th>
+              <th><span class="img_radious"><img src="../../../assets/img/profile-image.png" alt=""></span> Albert Flores</th>
+              <td>Parikh Clinic test</td>
+              <td>03-18-2022</td>
+              <td>03-18-2022</td>
+              <td>Ach</td>
+              <td class="text-danger">$205.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="Paid" role="tabpanel" aria-labelledby="nav-profile-tab">
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Name</th>
+              <th>Clinic</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Payment VIA</th>
+              <th>Paid</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th><p class="ser_no">1</p></th>
+              <th><span class="img_radious"><img src="../../../assets/img/profile-image.png" alt=""></span> Albert Flores</th>
+              <td>Parikh Clinic test</td>
+              <td>03-18-2022</td>
+              <td>03-18-2022</td>
+              <td>Ach</td>
+              <td class="text-success">$205.00</td>
+            </tr>
+            <tr>
+              <th><p class="ser_no">2</p></th>
+              <th><span class="img_radious"><img src="../../../assets/img/profile-image.png" alt=""></span> Darrell Steward</th>
+              <td>Parikh Clinic test</td>
+              <td>03-18-2022</td>
+              <td>03-18-2022</td>
+              <td>Ach</td>
+              <td class="text-success">$205.00</td>
+            </tr>
+            <tr>
+              <th><p class="ser_no">3</p></th>
+              <th><span class="img_radious"><img src="../../../assets/img/profile-image.png" alt=""></span> Robert Fox</th>
+              <td>Parikh Clinic test</td>
+              <td>03-18-2022</td>
+              <td>03-18-2022</td>
+              <td>Ach</td>
+              <td class="text-success">$205.00</td>
+            </tr>
+            <tr>
+              <th><p class="ser_no">4</p></th>
+              <th><span class="img_radious"><img src="../../../assets/img/profile-image.png" alt=""></span> Devon Lane</th>
+              <td>Parikh Clinic test</td>
+              <td>03-18-2022</td>
+              <td>03-18-2022</td>
+              <td>Ach</td>
+              <td class="text-success">$205.00</td>
+            </tr>
+            <tr>
+              <th><p class="ser_no">5</p></th>
+              <th><span class="img_radious"><img src="../../../assets/img/profile-image.png" alt=""></span> Darlene Robertson</th>
+              <td>Parikh Clinic test</td>
+              <td>03-18-2022</td>
+              <td>03-18-2022</td>
+              <td>Ach</td>
+              <td class="text-danger">$205.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </main>

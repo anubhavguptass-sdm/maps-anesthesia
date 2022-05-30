@@ -96,7 +96,7 @@
 
 .sidebar-wrapper .sidebar-brand > img {
   // flex-grow: 1;
-  width: 80px;
+  width: 110px;
   display: block;
   margin: auto;
 }
@@ -157,6 +157,14 @@
 .sidebar-wrapper .sidebar-menu .sidebar-submenu {
   display: none;
 }
+.sidebar-wrapper .sidebar-menu .sidebar-submenu {
+  display: none;
+}
+
+.sidebar-wrapper .sidebar-menu.sidebar-menu-footer {
+  position: absolute;
+  bottom: 0;
+}
 
 /*--------------------------page-content-----------------------------*/
 
@@ -212,11 +220,10 @@
 /*-----------------------------chiller-theme-------------------------------------------------*/
 
 .chiller-theme .sidebar-wrapper {
-  background: #000;
+  background: #1F1D66;
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-menu {
-  border-top: 1px solid #ffffff1a;
   padding-top: 20px;
   margin-top: 20px;
 }
@@ -225,10 +232,28 @@
   margin-bottom: 13px;
 }
 
+.chiller-theme .sidebar-wrapper .sidebar-menu ul li.active {
+  position: relative;
+  background-color: #f9f9ff;
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-menu ul li.active::after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: 0px;
+  width: 25px;
+  height: 25px;
+  background-color: #f9f9ff;
+}
+
+.chiller-theme .sidebar-wrapper .sidebar-menu ul li.active a {
+  color: #1F1D66;
+}
+
 .chiller-theme .sidebar-wrapper .sidebar-brand > a,
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li a {
   color: #ffffff;
-  opacity: 0.6;
   height: 60px;
   width: 190px;
   margin: auto;
@@ -271,7 +296,7 @@
   width: 100%;
   padding: 0 1rem;
   padding-left: 235px;
-  background-color: #fff !important;
+  background-color: #F9F9FF !important;
   border-bottom: 1px solid #d0d5e7;
   z-index: 999;
 }
@@ -302,7 +327,7 @@
 }
 
 .user_logout a img {
-  border-radius: 20px;
+  border-radius: 2px;
   width: 30px;
   height: 30px;
 }
@@ -328,18 +353,7 @@
 }
 
 .bell_icon a img {
-  width: 16px;
-}
-
-.bell_icon:after {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: #f7c908;
-  position: absolute;
-  top: 20px;
-  right: 5px;
-  border-radius: 10px;
+  width: 24px;
 }
 
 .nav-item {
@@ -359,13 +373,36 @@
   display: none;
 }
 .user_logout a {
-  border: 1px solid #888;
-  border-radius: 4px;
+  border-radius: 0px;
   color: #555;
   font-weight: 500;
+  display: flex;
+  p {
+    margin: 0;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}
+.user_logout {  
+  .dropdown-toggle::after {
+    margin-top: 1rem;
+  }
 }
 .nav_collapse {
   padding: 0.5rem 0;
+}
+.clinic_code {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  p {
+    margin: 0;
+    span {
+      color: #60C6FF;
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -422,10 +459,6 @@
   .navbar_search {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
-  }
-
-  .bell_icon:after {
-    right: 10px;
   }
 
   .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown_menu {

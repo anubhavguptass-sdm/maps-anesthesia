@@ -3,15 +3,15 @@
 body {
   font-family: $fontFamily;
   font-size: $font16;
-  color: $textBlack4;
+  color: $primaryColor;
   background-color: #fff;
-  font-weight: $thin;
+  font-weight: $normal;
 }
 
 a {
-  color: $blueColor;
+  color: $primaryColor;
   text-decoration: none;
-  font-weight: $thin;
+  font-weight: $normal;
 }
 
 h1,
@@ -24,7 +24,7 @@ p,
 a,
 label {
   font-family: $fontFamily;
-  font-weight: $thin;
+  font-weight: $normal;
 }
 
 h1 {
@@ -83,7 +83,9 @@ h6 {
 a {
   color: $primaryColor;
 }
-
+strong {
+  font-weight: $bold;
+}
 .form-group {
   margin-bottom: 1.4rem;
 }
@@ -192,14 +194,6 @@ a {
 
 /* Custom Checkbox */
 
-.advance-search .container_c input:checked ~ .checkmark_c {
-  background-color: transparent;
-  border-color: #fff;
-}
-.advance-search .container_c .checkmark_c:after {
-  border: solid #fff;
-  border-width: 0 3px 3px 0;
-}
 .breadcrumb-nav {
   .breadcrumb {
     background-color: #fff;
@@ -235,7 +229,7 @@ a {
 }
 .carousel_area {
   .slick-next {
-    background-image: url("assets/img/right_slide_arrow.png");
+    // background-image: url("assets/img/right_slide_arrow.png");
     width: 50px;
     height: 50px;
     background-size: 100%;
@@ -247,7 +241,7 @@ a {
     }
   }
   .slick-prev {
-    background-image: url("assets/img/left_slide_arrow.png");
+    // background-image: url("assets/img/left_slide_arrow.png");
     width: 50px;
     height: 50px;
     background-size: 100%;
