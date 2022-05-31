@@ -1,27 +1,5 @@
 @import "../../../assets/scss/variable.scss";
 
-.nav-tabs {
-  border-bottom: none;
-  .nav-link {
-    color: #1f1d66;
-    background: $white;
-    border-radius: 15px 15px 0px 0px;
-    margin-right: 15px;
-    padding: 15px 25px;
-    font-weight: $bold;
-    border: 1px solid rgba(61, 57, 137, 0.1);
-  }
-  .nav-link.active {
-    color: $white;
-    background: #1e85da;
-    border-radius: 15px 15px 0px 0px;
-    padding: 15px 25px;
-  }
-  .nav-link:hover {
-    border-color: $white;
-  }
-}
-
 .tab-content {
   background-color: $white;
   border-radius: 0px 15px 15px 15px;

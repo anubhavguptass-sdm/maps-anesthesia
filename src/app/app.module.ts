@@ -13,6 +13,7 @@ import { ProfileComponent } from './admin/profile/profile.component';
 import { ChangePasswordComponent } from './admin/change-password/change-password.component';
 import { EditProfileComponent } from './admin/edit-profile/edit-profile.component';
 import { AppointmentComponent } from './admin/appointment/appointment.component';
+import { AppointmentDetailsComponent } from './admin/appointment-details/appointment-details.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AppointmentComponent } from './admin/appointment/appointment.component'
     ChangePasswordComponent,
     EditProfileComponent,
     AppointmentComponent,
+    AppointmentDetailsComponent,
   ],
   imports: [
     BrowserModule,
