@@ -1,0 +1,10 @@
+@import "../../../assets/scss/variable.scss";
+
+.schedule-appointment {
+    .border-bottom {
+        border-bottom: 1px solid #333;
+        .form-check-label {
+            font-size: 18px;
+        }
+    }
+}

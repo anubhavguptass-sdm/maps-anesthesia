@@ -14,6 +14,9 @@ import { ChangePasswordComponent } from './admin/change-password/change-password
 import { EditProfileComponent } from './admin/edit-profile/edit-profile.component';
 import { AppointmentComponent } from './admin/appointment/appointment.component';
 import { AppointmentDetailsComponent } from './admin/appointment-details/appointment-details.component';
+import { ScheduleAppointmentComponent } from './admin/schedule-appointment/schedule-appointment.component';
+import { AppointmentConfirmationComponent } from './modal/appointment-confirmation/appointment-confirmation.component';
+import { PatientListComponent } from './admin/patient-list/patient-list.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { AppointmentDetailsComponent } from './admin/appointment-details/appoint
     EditProfileComponent,
     AppointmentComponent,
     AppointmentDetailsComponent,
+    ScheduleAppointmentComponent,
+    AppointmentConfirmationComponent,
+    PatientListComponent,
   ],
   imports: [
     BrowserModule,

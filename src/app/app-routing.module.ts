@@ -5,7 +5,9 @@ import { AppointmentComponent } from './admin/appointment/appointment.component'
 import { ChangePasswordComponent } from './admin/change-password/change-password.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { EditProfileComponent } from './admin/edit-profile/edit-profile.component';
+import { PatientListComponent } from './admin/patient-list/patient-list.component';
 import { ProfileComponent } from './admin/profile/profile.component';
+import { ScheduleAppointmentComponent } from './admin/schedule-appointment/schedule-appointment.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 
@@ -42,6 +44,14 @@ const routes: Routes = [
   {
     path: 'appointment-details',
     component: AppointmentDetailsComponent,
+  },
+  {
+    path: 'schedule-appointment',
+    component: ScheduleAppointmentComponent,
+  },
+  {
+    path: 'patient-list',
+    component: PatientListComponent,
   },
 ];
 
