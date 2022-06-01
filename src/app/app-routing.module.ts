@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AnesthesiologistDetailComponent } from './admin/anesthesiologist-detail/anesthesiologist-detail.component';
+import { AnesthesiologistProfileComponent } from './admin/anesthesiologist-profile/anesthesiologist-profile.component';
+import { AnesthesiologistComponent } from './admin/anesthesiologist/anesthesiologist.component';
 import { AppointmentDetailsComponent } from './admin/appointment-details/appointment-details.component';
 import { AppointmentComponent } from './admin/appointment/appointment.component';
 import { ChangePasswordComponent } from './admin/change-password/change-password.component';
@@ -52,6 +55,18 @@ const routes: Routes = [
   {
     path: 'patient-list',
     component: PatientListComponent,
+  },
+  {
+    path: 'anesthesiologist',
+    component: AnesthesiologistComponent,
+  },
+  {
+    path: 'anesthesiologist-detail',
+    component: AnesthesiologistDetailComponent,
+  },
+  {
+    path: 'anesthesiologist-profile',
+    component: AnesthesiologistProfileComponent,
   },
 ];
 

@@ -17,6 +17,9 @@ import { AppointmentDetailsComponent } from './admin/appointment-details/appoint
 import { ScheduleAppointmentComponent } from './admin/schedule-appointment/schedule-appointment.component';
 import { AppointmentConfirmationComponent } from './modal/appointment-confirmation/appointment-confirmation.component';
 import { PatientListComponent } from './admin/patient-list/patient-list.component';
+import { AnesthesiologistComponent } from './admin/anesthesiologist/anesthesiologist.component';
+import { AnesthesiologistDetailComponent } from './admin/anesthesiologist-detail/anesthesiologist-detail.component';
+import { AnesthesiologistProfileComponent } from './admin/anesthesiologist-profile/anesthesiologist-profile.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +38,9 @@ import { PatientListComponent } from './admin/patient-list/patient-list.componen
     ScheduleAppointmentComponent,
     AppointmentConfirmationComponent,
     PatientListComponent,
+    AnesthesiologistComponent,
+    AnesthesiologistDetailComponent,
+    AnesthesiologistProfileComponent,
   ],
   imports: [
     BrowserModule,
