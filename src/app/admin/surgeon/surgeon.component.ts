@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AddSurgeonComponent } from 'src/app/modal/add-surgeon/add-surgeon.component';
 
 @Component({
   selector: 'app-surgeon',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SurgeonComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  addSurgeon(): void {
+    const dialogRef = this.dialog.open(AddSurgeonComponent, {
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
   }
 
 }

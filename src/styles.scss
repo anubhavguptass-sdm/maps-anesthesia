@@ -498,5 +498,8 @@ strong {
 }
 /******* Card *****/
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/****** Modal **********/
+.mat-dialog-container {
+  background-color: $white;
+}
+/****** Modal **********/

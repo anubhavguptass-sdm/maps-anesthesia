@@ -22,6 +22,9 @@ import { AnesthesiologistDetailComponent } from './admin/anesthesiologist-detail
 import { AnesthesiologistProfileComponent } from './admin/anesthesiologist-profile/anesthesiologist-profile.component';
 import { SurgeonComponent } from './admin/surgeon/surgeon.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+import { AddSurgeonComponent } from './modal/add-surgeon/add-surgeon.component';
+
 
 @NgModule({
   declarations: [
@@ -44,11 +47,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AnesthesiologistDetailComponent,
     AnesthesiologistProfileComponent,
     SurgeonComponent,
+    AddSurgeonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
