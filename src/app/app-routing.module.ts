@@ -11,6 +11,7 @@ import { EditProfileComponent } from './admin/edit-profile/edit-profile.componen
 import { PatientListComponent } from './admin/patient-list/patient-list.component';
 import { ProfileComponent } from './admin/profile/profile.component';
 import { ScheduleAppointmentComponent } from './admin/schedule-appointment/schedule-appointment.component';
+import { SurgeonComponent } from './admin/surgeon/surgeon.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 
@@ -67,6 +68,10 @@ const routes: Routes = [
   {
     path: 'anesthesiologist-profile',
     component: AnesthesiologistProfileComponent,
+  },
+  {
+    path: 'surgeon',
+    component: SurgeonComponent,
   },
 ];
 

@@ -20,6 +20,8 @@ import { PatientListComponent } from './admin/patient-list/patient-list.componen
 import { AnesthesiologistComponent } from './admin/anesthesiologist/anesthesiologist.component';
 import { AnesthesiologistDetailComponent } from './admin/anesthesiologist-detail/anesthesiologist-detail.component';
 import { AnesthesiologistProfileComponent } from './admin/anesthesiologist-profile/anesthesiologist-profile.component';
+import { SurgeonComponent } from './admin/surgeon/surgeon.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -41,10 +43,12 @@ import { AnesthesiologistProfileComponent } from './admin/anesthesiologist-profi
     AnesthesiologistComponent,
     AnesthesiologistDetailComponent,
     AnesthesiologistProfileComponent,
+    SurgeonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
