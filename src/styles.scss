@@ -153,6 +153,22 @@ strong {
   padding: 0.75rem 1.5rem;
 }
 
+.input-right-icon {
+  position: relative;
+  em {
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    font-size: 1.2rem;
+    color: $grayColor4;
+  }
+  img {
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    width: 20px;
+  }
+}
 .input-icon {
   position: relative;
 
@@ -340,6 +356,7 @@ strong {
   border-radius: 16px;
   text-transform: uppercase;
   min-width: 125px;
+  min-height: 56px;
 }
 .border-radius-50 {
   border-radius: 50px;

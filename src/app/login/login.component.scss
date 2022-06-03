@@ -1,78 +1,60 @@
 @import "../../assets/scss/variable.scss";
 
-.login_section {
-    padding: 3.5rem 0;
+.login-section {
+    display: flex;
     background-color: $grayColor1;
-    .login_card {
-        padding: 3rem 4rem;
-        border-radius: 20px;
-        box-shadow: 0px 0px 28px #0000000F;
-        ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: flex-start;
-            margin-bottom: 2.5rem;
-            padding: 0;
-            position: relative;
-            border-bottom: 1px solid $grayColor2;
-            width: 80%;
-            li {
-                font-weight: $medium;
-                font-size: $font20;
-                a {
-                    font-weight: $medium;
-                    color: #000;
-                    padding: 1rem 1.5rem;
-                    min-width: 150px;
-                    margin: -1px;
-                    display: inherit;
-                    &.active {
-                        font-weight: $extrabold;
-                        border-bottom: 2px solid $primaryColor;
-                    }
-                    &:nth-child(1) {
-                        padding-left: 0;
-                    }
-                }
-            }
-        }
-        .remember {
-            display: flex;
-            justify-content: space-between;
-            a {
-                font-size: 1rem;
-                font-weight: $medium;
-            }
-        }
-        .btn-primary {
-            height: 80px;
-            border-radius: 6px;
-            background-color: $primaryColor;
-            border-color: $primaryColor;
-            font-size: $font20;
-            font-weight: $bold;
-            color: $white;
+    .login-left {
+        width: 50%;
+        .login-bg {
+            // background-image: url('../../assets/img/transparent-rectangle.png');
+            background-color: #1F1D66;
+            height: 100vh;
             width: 100%;
-            margin-bottom: 2.5rem;
-        }
-        .dont_acc {
-            font-weight: $medium;
-            margin-bottom: 0;
-            text-align: center;
-            a {
-                font-weight: $medium;
+            position: relative;
+            .maps-logo {
+                position: absolute;
+                height: 125px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .curve-img {
+                position: absolute;
+                width: 75%;
+                right: 0;
+                bottom: 0;
             }
         }
-        h6 {
-            font-size: $font20;
-            font-weight: $bold;
-        }
-        .d-flex {
-            label {
-                margin-right: 1.5rem;
-                &:nth-last-child(1) {
-                    margin-right: 0;
+    }
+    .login-right {
+        width: 50%;
+        .login-form {
+            width: 80%;
+            margin: auto;
+            padding: 5rem 0 2rem 0;
+            min-height: 100vh;
+            position: relative;
+            h2 {
+                font-weight: 600;
+                font-size: 2.5rem;
+            }
+            p {
+                margin-bottom: 2rem;
+            }
+            .forgot-pwd {
+                text-align: right;
+            }
+            .login-btn {
+                text-align: right;
+                .btn {
+                    width: 50%;
                 }
+            }
+            .dont-account {
+                position: absolute;
+                bottom: 0;
+                text-align: center;
+                width: 100%;
             }
         }
     }
