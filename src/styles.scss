@@ -69,61 +69,62 @@ h6,
 p,
 a,
 label {
-  font-family: "SF Pro Display";
+  font-family: "SF Pro Display" !important;
   font-weight: $normal;
 }
-
-h1 {
-  font-size: 72px;
-  line-height: 64px;
-}
-
-h2 {
-  font-size: 36px;
-  line-height: 36px;
-
-  strong {
-    font-weight: 700;
+.mat-typography {
+  h1 {
+    font-size: 72px;
+    line-height: 64px;
   }
 
-  @include sm {
+  h2 {
+    font-size: 36px;
+    line-height: 36px;
+
+    strong {
+      font-weight: 700;
+    }
+
+    @include sm {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  h3 {
+    font-size: 30px;
+    line-height: 30px;
+
+    strong {
+      font-weight: 700;
+    }
+
+    @include sm {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  h4 {
+    font-size: 32px;
+    line-height: 40px;
+
+    @include sm {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  h5 {
     font-size: 24px;
     line-height: 32px;
   }
-}
 
-h3 {
-  font-size: 30px;
-  line-height: 30px;
-
-  strong {
-    font-weight: 700;
+  h6 {
+    font-size: 18px;
+    line-height: 24px;
   }
-
-  @include sm {
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-h4 {
-  font-size: 32px;
-  line-height: 40px;
-
-  @include sm {
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-h5 {
-  font-size: 24px;
-  line-height: 32px;
-}
-
-h6 {
-  font-size: 18px;
-  line-height: 24px;
 }
 p {
   font-size: 16px;
@@ -137,8 +138,9 @@ td,
 th {
   opacity: 0.75;
 }
+.strong,
 strong {
-  font-weight: $bold;
+  font-weight: $bold !important;
 }
 .form-group {
   margin-bottom: 1.4rem;
@@ -152,7 +154,9 @@ strong {
   height: 60px;
   padding: 0.75rem 1.5rem;
 }
-
+.control-label {
+  font-size: 16px;
+}
 .input-right-icon {
   position: relative;
   em {
@@ -186,8 +190,8 @@ strong {
   img {
     position: absolute;
     left: 10px;
-    top: 20px;
-    width: 20px;
+    bottom: 20px;
+    height: 20px;
   }
 }
 
@@ -357,6 +361,12 @@ strong {
   text-transform: uppercase;
   min-width: 125px;
   min-height: 56px;
+  @include sm {
+    min-width: auto;
+    min-height: 36px;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
 }
 .border-radius-50 {
   border-radius: 50px;
@@ -518,5 +528,37 @@ strong {
 /****** Modal **********/
 .mat-dialog-container {
   background-color: $white;
+  color: $primaryColor;
+  border-radius: 16px !important;
+  hr {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+}
+.dialog-sm {
+  max-width: 30vw !important;
 }
 /****** Modal **********/
+
+/****** Custom Scroll Bar *********/
+/* width */
+.customScroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+.customScroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.customScroll::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.customScroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/****** Custom Scroll Bar *********/

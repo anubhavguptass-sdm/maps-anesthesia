@@ -5,6 +5,7 @@ import { AnesthesiologistProfileComponent } from './admin/anesthesiologist-profi
 import { AnesthesiologistComponent } from './admin/anesthesiologist/anesthesiologist.component';
 import { AppointmentDetailsComponent } from './admin/appointment-details/appointment-details.component';
 import { AppointmentComponent } from './admin/appointment/appointment.component';
+import { BillingComponent } from './admin/billing/billing.component';
 import { ChangePasswordComponent } from './admin/change-password/change-password.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { EditProfileComponent } from './admin/edit-profile/edit-profile.component';
@@ -12,8 +13,10 @@ import { PatientListComponent } from './admin/patient-list/patient-list.componen
 import { ProfileComponent } from './admin/profile/profile.component';
 import { ScheduleAppointmentComponent } from './admin/schedule-appointment/schedule-appointment.component';
 import { SurgeonComponent } from './admin/surgeon/surgeon.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 const routes: Routes = [
@@ -26,8 +29,20 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
-    path: 'admin',
+    path: 'forgot-password',
+    component: ForgotPasswordComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
+  },
+  {
+    path: 'dashboard',
     component: DashboardComponent,
+  },
+  {
+    path: 'billing',
+    component: BillingComponent,
   },
   {
     path: 'profile',

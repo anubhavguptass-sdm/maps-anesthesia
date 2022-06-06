@@ -28,7 +28,7 @@ $screen-ipad-max: 1022px;
 }
 
 @mixin tab {
-  @media screen and (min-width: #{$screen-xs-min}) and (max-width: #{$screen-xs-max}) {
+  @media screen and (max-width: #{$screen-xs-max}) {
     @content;
   }
 }
@@ -123,7 +123,7 @@ $screen-ipad-max: 1022px;
 
 /* MIXINS */
 $primaryColor: #130F26;
-$secondaryColor: #60C6FF;
+$secondaryColor: #1E85DA;
 $tertiaryColor: #1F1D66;
 $lightGray: #FFF8F6;
 $textBlack1: #020B0C;
@@ -137,8 +137,9 @@ $grayColor1: #f9f9ff;
 $grayColor2: #ededed;
 $grayColor3: #F6F6F6;
 $grayColor4: #9d9d9d;
-$dangerColor: #FF5749;
+$dangerColor: #CE0000;
 $greenColor: #30D35C;
+$yellowColor: #CE7C00;
 $textGray: #1F1D28;
 
 

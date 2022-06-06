@@ -24,6 +24,13 @@ import { SurgeonComponent } from './admin/surgeon/surgeon.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { AddSurgeonComponent } from './modal/add-surgeon/add-surgeon.component';
+import { RegisterComponent } from './register/register.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { BillingComponent } from './admin/billing/billing.component';
+import { AdditionalFeesComponent } from './modal/additional-fees/additional-fees.component';
+import { PatientDetailsComponent } from './modal/patient-details/patient-details.component';
+import { AddPatientComponent } from './modal/add-patient/add-patient.component';
+import { ConnectAnesthesiologistComponent } from './modal/connect-anesthesiologist/connect-anesthesiologist.component';
 
 
 @NgModule({
@@ -48,6 +55,13 @@ import { AddSurgeonComponent } from './modal/add-surgeon/add-surgeon.component';
     AnesthesiologistProfileComponent,
     SurgeonComponent,
     AddSurgeonComponent,
+    RegisterComponent,
+    ForgotPasswordComponent,
+    BillingComponent,
+    AdditionalFeesComponent,
+    PatientDetailsComponent,
+    AddPatientComponent,
+    ConnectAnesthesiologistComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,158 +1,246 @@
 @import "../../../assets/scss/variable.scss";
 
-.tab-content {
-  background-color: $white;
-  border-radius: 0px 15px 15px 15px;
-  box-shadow: 0px 4px 10px rgba(61, 57, 137, 0.05);
-  padding: 15px;
-  border: 1px solid rgba(61, 57, 137, 0.1);
-  .tab-pane table {
+.upcoming-appoint {
+  margin: 0;
+  font-size: 18px;
+  font-weight: $bold;
+  opacity: 1;
+  color: $primaryColor;
+  span {
+    background-color: $secondaryColor;
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 38px;
+    display: inline-block;
+    margin-right: 1.5rem;
+    color: $white;
+  }
+}
+.pending-approval {
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  .row {
+    overflow: auto;
+    white-space: nowrap;
     width: 100%;
-    thead {
-      th {
-        padding: 25px 10px;
-        text-transform: uppercase;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    .col {
+      max-width: 30%;
+      width: 30%;
+      flex: 0 0 30%;
+      @include tab {
+        max-width: 60%;
+        width: 60%;
+        flex: 0 0 60%;
       }
-    }
-    tbody {
-      box-shadow: 0px 4px 10px rgba(61, 57, 137, 0.05);
-      border: 1px solid #ddd;
-      tr {
-        border-bottom: 1px solid #ddd;
-        padding: 10px 0px;
-        th {
-          padding: 25px 10px;
+      @include sm {
+        max-width: 95%;
+        width: 95%;
+        flex: 0 0 95%;
+      }
+      .card-body {
+        hr {
+          margin-left: -1.25rem;
+          margin-right: -1.25rem;
         }
-        td {
-          padding: 25px 10px;
-        }
-      }
-      tr:last-child {
-        border-bottom: none;
-      }
-      th p.ser_no {
-        display: inherit;
-        align-items: center;
-        vertical-align: middle;
-        border-radius: 8px;
-        height: 30px;
-        width: 30px;
-        text-align: center;
-        background-color: #ececf9;
-      }
-      th span.img_radious img {
-        border-radius: 50%;
-        height: 35px;
-        width: 35px;
-        margin-left: 5px;
-        margin-right: 10px;
-      }
-    }
-  }
-}
-
-.page_card {
-  box-shadow: 0 8px 17px 2px #dddddd24, 0 3px 14px 2px #dfdfdf1f, 0 5px 5px -3px #ebebeb33;
-  padding: 1rem;
-  background-color: $white;
-  margin-bottom: 1rem;
-}
-
-.billing-details {
-  position: fixed;
-  right: 0;
-  width: 400px;
-  top: 0;
-  height: 100vh;
-  z-index: 999;
-  background: $white;
-
-  .billing-title {
-    padding: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(31, 29, 102, 0.2);
-    align-items: center;
-    h3 {
-      font-size: 22px;
-      font-weight: $bold;
-      margin: 0;
-    }
-    img {
-      width: 30px;
-    }
-  }
-  .billing-content {
-    padding: 1.5rem;
-    .billing-info {
-      background: rgba(31, 29, 102, 0.09);
-      padding: 0.5rem;
-      border-radius: 15px;
-      margin-bottom: 1rem;
-      ul {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 1rem;
-        margin: 0;
-        li {
-          width: 50%;
-          &:nth-child(1),
-          &:nth-child(2) {
-            margin-bottom: 1rem;
-          }
-          p {
-            margin: 0;
-          }
-          h6 {
-            margin: 0;
-            opacity: 1;
-            color: $primaryColor;
-            font-weight: $bold;
-          }
-        }
-      }
-    }
-    .billing-dentist {
-      background: $white;
-      border: 1px solid rgba(61, 57, 137, 0.1);
-      box-shadow: 0px 4px 10px rgba(61, 57, 137, 0.05);
-      border-radius: 12px;
-      margin-bottom: 1rem;
-      padding: 1rem;
-      .billing-total {
-        h6 {
+        ul {
+          padding: 0;
+          margin: 0;
           display: flex;
-          font-weight: $medium;
-          border-bottom: 1px solid rgba(61, 57, 137, 0.1);
           justify-content: space-between;
-          line-height: 2;
-          &:nth-last-child(1) {
-            border-bottom: none;
-            margin: 0;
+          list-style-type: none;
+          .profile-img {
+            width: 45px;
+            height: 45px;
+            min-width: 45px;
+            margin-right: 0.5rem;
+            img {
+              width: 100%;
+              height: 100%;
+            }
           }
-          span {
-            font-size: 14px;
-            opacity: 0.75;
+          .dr-name {
+            font-size: 18px;
+            opacity: 1;
+            font-weight: $medium;
+            span {
+              font-size: 14px;
+              opacity: 0.75;
+              display: block;
+              font-weight: $normal;
+            }
+          }
+          .call-img {
+            width: 24px;
+            height: 24px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .timing {
+          li {
+            img {
+              width: 12px;
+              margin-right: 0.25rem;
+            }
+          }
+        }
+        .action {
+          align-items: center;
+          @include tab {
+            flex-wrap: wrap;
+          }
+          @include sm {
+            flex-wrap: wrap;
+          }
+          .approve-pending {
+            color: $yellowColor;
+            font-weight: $medium;
+            @include tab {
+              width: 100%;
+            }
+          }
+          .btn {
+            padding: 4px 8px;
+            font-size: 12px;
+            min-width: 90px;
+            min-height: 36px;
+            line-height: 34px;
           }
         }
       }
     }
-    .payment-type {
-      font-size: 14px;
-    }
-    .payment-advance {
-      font-size: 14px;
-      color: $secondaryColor;
-    }
-    .custom_radio {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      margin: 0;
-      li {
-        margin-right: 1rem;
+  }
+}
+.upcoming-appontment {
+  .row {
+    .col.border-right {
+      border-right: 1px solid #3d398933 !important;
+      @include sm {
+        border-right: none !important;
       }
+    }
+    .col {
+      p {
+        margin-bottom: 0;
+      }
+      .btn {
+        padding: 5px 10px;
+        min-width: 90px;
+        min-height: 36px;
+      }
+      @include tab {
+        margin-bottom: 1rem;
+        width: 25%;
+        max-width: 25%;
+        flex: 0 0 25%;
+      }
+      @include sm {
+        margin-bottom: 1rem;
+        width: 50%;
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+    }
+    .justify-content-start-m {
+      justify-content: flex-start !important;
+    }
+    .date-time {
+      padding-left: 3rem;
+      @include tab {
+        padding-left: 1rem;
+      }
+      @include sm {
+        padding-left: 1rem;
+      }
+    }
+    .img_radious {
+      margin-right: 1rem;
+      img {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+      }
+    }
+    .img_paymentby {
+      img {
+        width: 35px;
+        height: 35px;
+        @include tab {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    .provider_text {
+      margin-bottom: 0;
+    }
+  }
+  .profile-card {
+    background: $white;
+    border: 1px solid rgba(61, 57, 137, 0.1);
+    box-shadow: 0px 4px 10px rgba(61, 57, 137, 0.05);
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 1rem;
+    .profile-body {
+      padding: 15px 0px 0px;
+    }
+    .profile-foot {
+      display: flex;
+      justify-content: space-around;
+      padding: 12px;
+      border-top: 1px solid rgba(61, 57, 137, 0.1);
+      height: 7vh;
+      .call_img {
+        width: 22px;
+      }
+    }
+    .profile-img {
+      border-radius: 50%;
+      width: 75px;
+      height: 75px;
+      margin-bottom: 10px;
+    }
+    .upload-img {
+      position: relative;
+      width: 25px;
+      overflow: hidden;
+      margin: auto;
+      top: -1.5rem;
+      right: -1.5rem;
+      cursor: pointer;
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+      }
+      img {
+        width: 25px;
+      }
+    }
+  }
+  .mr_2 {
+    margin-right: 2rem;
+  }
+  .width25 {
+    width: 25px;
+  }
+  .card-body.border-bottom {
+    border-bottom: 1px solid #ddd;
+  }
+  .notes {
+    margin-bottom: 0;
+    color: $dangerColor;
+    img {
+      margin-right: 5px;
     }
   }
 }

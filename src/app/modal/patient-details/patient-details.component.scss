@@ -1,0 +1,35 @@
+@import "../../../assets/scss/variable.scss";
+
+.dialog-head {
+    margin-bottom: 1rem;
+    h3 {
+        margin: 0;
+        color: $primaryColor;
+        font-size: 22px;
+        font-weight: $medium;
+    }
+}
+.patient-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $grayColor1;
+    padding: 1rem;
+    border-radius: 10px;
+    img {
+        width: 45px;
+    }
+    p {
+        font-weight: $bold;
+        font-size: 18px;
+        margin: 0 0.5rem;
+    }
+}
+.patient-info {
+    margin-bottom: 1rem;
+    p {
+        font-size: 16px;
+        margin: 0;
+        opacity: 1;
+    }
+}

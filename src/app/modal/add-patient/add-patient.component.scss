@@ -1,0 +1,11 @@
+@import "../../../assets/scss/variable.scss";
+
+.dialog-head {
+    margin-bottom: 1rem;
+    h3 {
+        margin: 0;
+        color: $primaryColor;
+        font-size: 22px;
+        font-weight: $medium;
+    }
+}

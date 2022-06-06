@@ -2,7 +2,7 @@
 <main class="page-content">
   <div class="d-flex justify-content-between form-group">
     <h2>Patient List</h2>
-    <button class="btn btn-primary-outline">Add Patient</button>
+    <button class="btn btn-primary-outline" (click)="addPatient()">Add Patient</button>
   </div>
   <div class="schedule-appointment">
     <div class="row">
@@ -50,7 +50,7 @@
               </div>
               <div class="col">
                 <div class="form-group">
-                  <button class="btn btn-primary-outline btn-block">
+                  <button class="btn btn-primary-outline btn-block" (click)="patientDetails()">
                     Search
                   </button>
                 </div>
