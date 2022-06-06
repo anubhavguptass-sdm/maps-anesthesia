@@ -18,6 +18,7 @@ export class SurgeonComponent implements OnInit {
 
   addSurgeon(): void {
     const dialogRef = this.dialog.open(AddSurgeonComponent, {
+      panelClass: 'dialog-sm'
     });
 
     dialogRef.afterClosed().subscribe(result => {

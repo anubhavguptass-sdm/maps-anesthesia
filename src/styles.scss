@@ -537,6 +537,13 @@ strong {
 }
 .dialog-sm {
   max-width: 30vw !important;
+  min-width: 25vw !important;
+  @include tab {
+    max-width: 70vw !important;
+  }
+  @include sm {
+    max-width: 90vw !important;
+  }
 }
 /****** Modal **********/
 

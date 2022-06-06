@@ -31,6 +31,7 @@ import { AdditionalFeesComponent } from './modal/additional-fees/additional-fees
 import { PatientDetailsComponent } from './modal/patient-details/patient-details.component';
 import { AddPatientComponent } from './modal/add-patient/add-patient.component';
 import { ConnectAnesthesiologistComponent } from './modal/connect-anesthesiologist/connect-anesthesiologist.component';
+import { SelectAnesthesiologistComponent } from './modal/select-anesthesiologist/select-anesthesiologist.component';
 
 
 @NgModule({
@@ -62,6 +63,7 @@ import { ConnectAnesthesiologistComponent } from './modal/connect-anesthesiologi
     PatientDetailsComponent,
     AddPatientComponent,
     ConnectAnesthesiologistComponent,
+    SelectAnesthesiologistComponent,
   ],
   imports: [
     BrowserModule,
