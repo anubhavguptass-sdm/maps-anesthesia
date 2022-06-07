@@ -32,6 +32,9 @@ import { PatientDetailsComponent } from './modal/patient-details/patient-details
 import { AddPatientComponent } from './modal/add-patient/add-patient.component';
 import { ConnectAnesthesiologistComponent } from './modal/connect-anesthesiologist/connect-anesthesiologist.component';
 import { SelectAnesthesiologistComponent } from './modal/select-anesthesiologist/select-anesthesiologist.component';
+import { ConsentForAnesthesiaComponent } from './consent-for-anesthesia/consent-for-anesthesia.component';
+import { PreAnestheticInstructionsComponent } from './pre-anesthetic-instructions/pre-anesthetic-instructions.component';
+import { PreAnestheticInstructionsEditComponent } from './pre-anesthetic-instructions-edit/pre-anesthetic-instructions-edit.component';
 
 
 @NgModule({
@@ -64,6 +67,9 @@ import { SelectAnesthesiologistComponent } from './modal/select-anesthesiologist
     AddPatientComponent,
     ConnectAnesthesiologistComponent,
     SelectAnesthesiologistComponent,
+    ConsentForAnesthesiaComponent,
+    PreAnestheticInstructionsComponent,
+    PreAnestheticInstructionsEditComponent,
   ],
   imports: [
     BrowserModule,

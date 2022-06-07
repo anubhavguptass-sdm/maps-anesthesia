@@ -23,6 +23,26 @@
                     max-width: 20%;
                     flex-basis: auto;
                 }
+                
+                @media only screen and (max-width: 767px) {
+                    .col {
+                        max-width: 100%;
+                        flex-basis: auto;
+                    }
+                    .cont-bg {
+                        margin-bottom: 15px;
+                    }
+                }
+
+                @media only screen and (min-width: 768px) and  (max-width: 1023px) {
+                    .col {
+                        max-width: 50%;
+                        flex-basis: auto;
+                    }
+                    .cont-bg {
+                        margin-bottom: 15px;
+                    }
+                }
             }
         }
         h6 {
@@ -40,12 +60,14 @@
         }
         .d-flex {
             justify-content: space-around;
+            align-items: center;
         }
         .img_radious {
             img {
                 border-radius: 50%;
-                width: 45px;
-                height: 45px;
+                width: 60px;
+                height: 60px;
+                margin-right: 1rem;
             }
         }
         .img_paymentby {

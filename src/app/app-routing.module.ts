@@ -13,19 +13,17 @@ import { PatientListComponent } from './admin/patient-list/patient-list.componen
 import { ProfileComponent } from './admin/profile/profile.component';
 import { ScheduleAppointmentComponent } from './admin/schedule-appointment/schedule-appointment.component';
 import { SurgeonComponent } from './admin/surgeon/surgeon.component';
+import { ConsentForAnesthesiaComponent } from './consent-for-anesthesia/consent-for-anesthesia.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { PreAnestheticInstructionsEditComponent } from './pre-anesthetic-instructions-edit/pre-anesthetic-instructions-edit.component';
+import { PreAnestheticInstructionsComponent } from './pre-anesthetic-instructions/pre-anesthetic-instructions.component';
 import { RegisterComponent } from './register/register.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
-  },
-  {
-    path: 'login',
     component: LoginComponent
   },
   {
@@ -87,6 +85,18 @@ const routes: Routes = [
   {
     path: 'surgeon',
     component: SurgeonComponent,
+  },
+  {
+    path: 'consent-for-anesthesia',
+    component: ConsentForAnesthesiaComponent,
+  },
+  {
+    path: 'pre-anesthetic-instructions-edit',
+    component: PreAnestheticInstructionsEditComponent,
+  },
+  {
+    path: 'pre-anesthetic-instructions',
+    component: PreAnestheticInstructionsComponent,
   },
 ];
 

@@ -39,6 +39,9 @@
     padding: 1rem;
     border-radius: 15px;
     margin-bottom: 1rem;
+    @include tab {
+      padding: 0;
+    }
     ul {
       list-style: none;
       display: flex;

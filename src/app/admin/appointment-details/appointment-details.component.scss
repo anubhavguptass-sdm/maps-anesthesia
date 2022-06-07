@@ -5,23 +5,37 @@
         .col.border-right {
             border-right: 1px solid #3d398933;
         }
-        .col p{
-            margin-bottom: 0;
+        .col {
+            p {
+                margin-bottom: 0;
+            }
+            @include sm {
+                width: 100%;
+                max-width: 100%;
+                flex: 0 0 100%;
+                margin-bottom: 1rem;
+            }
         }
         .d-flex {
             justify-content: space-around;
+            @include tab {
+                justify-content: flex-start;
+                margin-bottom: 1rem;
+            }
         }
         .img_radious {
             img {
                 border-radius: 50%;
                 width: 45px;
                 height: 45px;
+                margin-right: 1rem;
             }
         }
         .img_paymentby {
             img {
                 width: 35px;
                 height: 35px;
+                margin-right: 1rem;
             }
         }
         .provider_text {
@@ -55,7 +69,7 @@
             margin-bottom: 10px;
         }
         .upload-img {
-            position: relative;    
+            position: relative;
             width: 25px;
             overflow: hidden;
             margin: auto;

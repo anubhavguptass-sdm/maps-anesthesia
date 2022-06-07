@@ -145,7 +145,13 @@ strong {
 .form-group {
   margin-bottom: 1.4rem;
 }
-
+/**** Margin Padding ******/
+.m-m-b-0 {
+  @include tab {
+    margin-bottom: 0 !important;
+  }
+}
+/**** Margin Padding ******/
 .form-control {
   background: $white;
   border: 1px solid rgba(61, 57, 137, 0.1);
@@ -363,7 +369,7 @@ strong {
   min-height: 56px;
   @include sm {
     min-width: auto;
-    min-height: 36px;
+    min-height: 48px;
     font-size: 14px;
     padding: 5px 10px;
   }

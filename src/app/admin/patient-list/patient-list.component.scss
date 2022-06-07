@@ -46,11 +46,31 @@
 .width25 {
     width: 25px;
 }
+.schedule-appointment {
+    .row {
+        .col {
+            @include tab {
+                max-width: 50%;
+                flex-basis: auto;
+            }
+            @include sm {
+                max-width: 100%;
+                flex-basis: auto;
+            }
+        }
+    }
+}
 .patient-card-list {
     .row {
         .col {
             max-width: 20%;
             flex-basis: auto;
+            @include tab {
+                max-width: 50%;
+            }
+            @include sm {
+                max-width: 100%;
+            }
         }
     }
 }

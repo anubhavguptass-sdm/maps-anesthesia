@@ -23,6 +23,26 @@
                     max-width: 20%;
                     flex-basis: auto;
                 }
+
+                @media only screen and (max-width: 767px) {
+                    .col {
+                        max-width: 100%;
+                        flex-basis: auto;
+                    }
+                    .cont-bg {
+                        margin-bottom: 15px;
+                    }
+                }
+
+                @media only screen and (min-width: 768px) and  (max-width: 1023px) {
+                    .col {
+                        max-width: 50%;
+                        flex-basis: auto;
+                    }
+                    .cont-bg {
+                        margin-bottom: 15px;
+                    }
+                }
             }
         }
         h6 {
@@ -60,6 +80,7 @@
     }
     .panel-white {
         background: #fff;
+        margin-bottom: 15px;
         .panel-heading {
             h6 {
                 padding: 15px;
@@ -91,5 +112,24 @@
     }
     .width25 {
         width: 25px;
+    }
+    @media only screen and (max-width: 767px) {
+        .col {
+            max-width: 100%;
+            flex-basis: auto;
+        }
+        .cont-bg {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and  (max-width: 1023px) {
+        .col {
+            max-width: 50%;
+            flex-basis: auto;
+        }
+        .cont-bg {
+            margin-bottom: 15px;
+        }
     }
 }

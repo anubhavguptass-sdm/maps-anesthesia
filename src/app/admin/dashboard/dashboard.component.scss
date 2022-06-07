@@ -243,4 +243,9 @@
       margin-right: 5px;
     }
   }
+  .doctor-title {
+    @include tab {
+      margin-bottom: 1rem;
+    }
+  }
 }
