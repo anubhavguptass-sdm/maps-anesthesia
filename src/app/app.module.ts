@@ -35,6 +35,7 @@ import { SelectAnesthesiologistComponent } from './modal/select-anesthesiologist
 import { ConsentForAnesthesiaComponent } from './consent-for-anesthesia/consent-for-anesthesia.component';
 import { PreAnestheticInstructionsComponent } from './pre-anesthetic-instructions/pre-anesthetic-instructions.component';
 import { PreAnestheticInstructionsEditComponent } from './pre-anesthetic-instructions-edit/pre-anesthetic-instructions-edit.component';
+import { PatientAppointmentComponent } from './patient-appointment/patient-appointment.component';
 
 
 @NgModule({
@@ -70,6 +71,7 @@ import { PreAnestheticInstructionsEditComponent } from './pre-anesthetic-instruc
     ConsentForAnesthesiaComponent,
     PreAnestheticInstructionsComponent,
     PreAnestheticInstructionsEditComponent,
+    PatientAppointmentComponent
   ],
   imports: [
     BrowserModule,

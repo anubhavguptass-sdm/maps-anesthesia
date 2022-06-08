@@ -16,6 +16,7 @@ import { SurgeonComponent } from './admin/surgeon/surgeon.component';
 import { ConsentForAnesthesiaComponent } from './consent-for-anesthesia/consent-for-anesthesia.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LoginComponent } from './login/login.component';
+import { PatientAppointmentComponent } from './patient-appointment/patient-appointment.component';
 import { PreAnestheticInstructionsEditComponent } from './pre-anesthetic-instructions-edit/pre-anesthetic-instructions-edit.component';
 import { PreAnestheticInstructionsComponent } from './pre-anesthetic-instructions/pre-anesthetic-instructions.component';
 import { RegisterComponent } from './register/register.component';
@@ -97,6 +98,10 @@ const routes: Routes = [
   {
     path: 'pre-anesthetic-instructions',
     component: PreAnestheticInstructionsComponent,
+  },
+  {
+    path: 'patient-appointment',
+    component: PatientAppointmentComponent,
   },
 ];
 
