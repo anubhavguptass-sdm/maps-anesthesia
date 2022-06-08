@@ -1,3 +1,2088 @@
 <div class="form-header">
     <img src="../../assets/img/header-mask.png" alt="" />
+</div>
+
+<div class="container-fluid">
+  <div class="appoint-details">
+    <div class="card form-group">
+      <div class="card-body">
+        <h6>Appointment Details</h6>
+        <div class="patient-detail">
+          <div class="patient-name">
+            <img src="../../assets/img/patient/1.png" alt="">
+            <div class="patient-info">
+              <h6>Edison Dentist</h6>
+              <p><img src="../../assets/img/map-marker.svg" alt=""> 181 evergren edison</p>
+            </div>
+          </div>
+          <div class="vertical-border"></div>
+          <div class="patient-data">
+            <p>Start Time</p>
+            <h6>10:30 AM</h6>
+          </div>
+          <div class="vertical-border"></div>
+          <div class="patient-data">
+            <p>End Time</p>
+            <h6>10:30 AM</h6>
+          </div>
+          <div class="vertical-border"></div>
+          <div class="patient-data">
+            <p>Date</p>
+            <h6>Thu, 31 March</h6>
+          </div>
+          <div class="vertical-border"></div>
+          <div class="patient-name">
+            <img src="../../assets/img/pay-hand-danger.svg" class="pay-hand" alt="">
+            <div class="patient-info">
+              <p>Payment by</p>
+              <h6>Clinic</h6>
+            </div>
+          </div>
+        </div>
+        <h6>Participants</h6>
+        <div class="row flex-wrap">
+          <div class="col">
+            <div class="profile-card">
+              <div class="profile-body">
+                <img
+                  src="../../../assets/img/profile-image.png"
+                  alt=""
+                  class="profile-img"
+                />
+                <h6>Bessie Cooper</h6>
+                <p>Cardiologists</p>
+              </div>
+              <div class="profile-foot">
+                <ul class="action-icon">
+                    <li><img src="../../../assets/img/pay-time-icon.svg" alt=""></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="profile-card">
+              <div class="profile-body">
+                <img
+                  src="../../../assets/img/profile-image.png"
+                  alt=""
+                  class="profile-img"
+                />
+                <h6>Savannah Nguyen</h6>
+                <p>Hematologists</p>
+              </div>
+              <div class="profile-foot">
+                <ul class="action-icon">
+                    <li><img src="../../../assets/img/call-icon.svg" alt=""></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="profile-card">
+              <div class="profile-body">
+                <img
+                  src="../../../assets/img/profile-image.png"
+                  alt=""
+                  class="profile-img"
+                />
+                <h6>Albert Flores</h6>
+                <p>Hematologists</p>
+              </div>
+              <div class="profile-foot">
+                <ul class="action-icon">
+                    <li><img src="../../../assets/img/call-icon.svg" alt=""></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-right">
+      <button class="btn btn-primary">Continue</button>
+    </div>
   </div>
+  <div class="payment-form">
+    <mat-stepper #stepper>
+      <mat-step>
+        <div class="card form-group bg-gray">
+          <form action="">
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">First Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Kristin"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Last Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Watson"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Gender</label>
+                    <div class="">
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="">Female
+                        </label>
+                      </div>
+                      <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" value="">Male
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Mail</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="deanna.curtis@example"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Date</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Height</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="174 cm"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Weight</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="60 Kg"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Social Security Number</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="78565"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Phone Number</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="(252) 555-0126"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-8 col-lg-8">
+                  <div class="form-group">
+                    <label for="" class="control-label">Street Address</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="351775 Rolling Green Rd. Utica, Pennsylvania "
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">City</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Cologne</option>
+                      <option value="">Cologne 1</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Zip Code</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="46486"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">State</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Louisiana</option>
+                      <option value="">Louisiana 1</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Country</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Saint Barthélemy</option>
+                      <option value="">Saint Barthélemy 1</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-md-12 col-lg-12">
+                  <h6>Parent/Guardian</h6>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Kristin Watson"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Relation</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Father"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Contact No</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="(201) 555-0124"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                  <div class="form-group">
+                    <label for="" class="control-label">Address</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="1901 Thornridge Cir. Shiloh, Hawaii 81063"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-md-12 col-lg-12">
+                  <h6>Surrogate decision-maker</h6>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Dianne Russell"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Contact No</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="(201) 555-0124"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-md-12 col-lg-12">
+                  <h6>Day of surgery driver/caretaker</h6>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Kristin Watson"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Relation</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Father"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Contact No</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="(201) 555-0124"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                  <div class="form-group">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Same as Parent/Guardian
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-12 col-lg-12">
+                  <h6>Emergency Contact</h6>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Kristin Watson"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Relation</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Father"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Contact No</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="(201) 555-0124"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                  <div class="form-group">
+                    <label for="" class="control-label">Address</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="1901 Thornridge Cir. Shiloh, Hawaii 81063"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="text-right">
+          <button class="btn btn-primary">Next</button>
+        </div>
+      </mat-step>
+      <mat-step>
+        <div class="card form-group bg-gray">
+          <form action="">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Kristin Watson"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Contact No</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="(201) 555-0124"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Father"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">City</label>
+                    <select name="" id="" class="form-control">
+                      <option value="">Cologne</option>
+                      <option value="">Cologne 1</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="text-right">
+          <button class="btn btn-primary-outline mr_2">Add Treating Physician</button>
+          <button class="btn btn-primary">Next</button>
+        </div>
+      </mat-step>
+      <mat-step>
+        <h5>Patient Info</h5>
+        <div class="card form-group bg-gray">
+          <form action="">
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-md-4 col-lg-4">
+                    <label for="" class="control-label">Patient Name:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Kristin Watson"
+                    />
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <label for="" class="control-label">D.O.B</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      placeholder="Father"
+                    />
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <label for="" class="control-label">Gender</label>
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Female
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Male
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+           <div class="form-group">
+            <label for="" class="control-label">Medication Allergies</label>
+            <input type="text" class="form-control" placeholder="Insect venom (stings)" />
+           </div>
+          </div>
+        </div>
+        <h6>Are you allergic to</h6>
+        <div class="card form-group">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-2 col-lg-2">
+                  <p>Latex</p>
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <div class="">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-lg-2">
+                <p>Peanuts</p>
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <div class="">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-lg-2">
+                <p>Metals</p>
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <div class="">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-lg-2">
+                <p>Citrus food</p>
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <div class="">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-lg-2">
+                <p>Eggs</p>
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <div class="">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-lg-2">
+                <p>Soy</p>
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <div class="">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-lg-2">
+                <p>Adhesive tape</p>
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <div class="">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h6>Medications</h6>
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <table class="table table-borderd">
+                <thead>
+                  <tr>
+                    <th>Drug</th>
+                    <th>Dose</th>
+                    <th>How Often</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Amitriptyline </td>
+                    <td>1</td>
+                    <td>3 Time</td>
+                  </tr>
+                  <tr>
+                    <td>Imipramine </td>
+                    <td>2</td>
+                    <td>2 Time</td>
+                  </tr>
+                  <tr>
+                    <td>Sertraline</td>
+                    <td>4</td>
+                    <td>5 Time</td>
+                  </tr>
+                  <tr>
+                    <td>Venlafaxine</td>
+                    <td>5</td>
+                    <td>1 Time</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <h6>Questionnaire:  (Please Answer Whether The Patient Has Had Any Of The Following):</h6>
+          <div class="card form-group">
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-lg-10 col-md-10">
+                  <span>History of anesthetic complications?</span>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-lg-10 col-md-10">
+                  <span>Prior difficulty with anesthesia or surgery?</span>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-lg-10 col-md-10">
+                  <span>Pseudocholinesterase deficiency</span>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-lg-10 col-md-10">
+                  <span>Nausea/vomiting after surgery?</span>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-lg-10 col-md-10">
+                  <span>History of malignant hyperthermia </span>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-lg-10 col-md-10">
+                  <span>Difficult Intubation?</span>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-lg-10 col-md-10">
+                  <span>Could you be pregnant?</span>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-lg-10 col-md-10">
+                  <span>Date of last menstrual period:</span>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-lg-10 col-md-10">
+                  <span>Is there smoking in the home?</span>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p><i>Check the appropriate box for all questions</i></p>
+          <h6>Do you suffer from any, or take any of the following</h6>
+          <div class="card form-group">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <p>High blood pressure</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Blood thinners</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Heart disease</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Aspirin</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Stroke</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Oral medications for diabetes</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Diabetes mellitus</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Insulin therapy</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Hepatitis</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Depression/Anxiety</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Acid reflux</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Kidney disease</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h6>Have you ever had</h6>
+          <div class="card form-group">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <p>Tonsillectomy</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Vasectomy</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Hysterectomy</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Hernia repair</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Heart surgery</p>
+                  <div class="form-group">
+                    <input type="date" class="form-control" placeholder="Year of Surgery">
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Colonoscopy</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Gallbladder surgery</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Pacemaker/Defibrillator </p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Gastroscopy</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Angioplasty</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Cataract surgery</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Appendectomy</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Bone/joint surgery</p>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="text" placeholder="Bone" class="form-control">
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" placeholder="Joint" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Removal of ovaries</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Tubal ligation (tubes tied)</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Axillary nodal dissection</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Right
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Left
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Both
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Other surgery:</p>
+                  <div class="form-group">
+                    <input type="text" placeholder="" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h6>Post-op caretake/driver</h6>
+        <div class="card form-group bg-gray">
+          <form action="">
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Name of person taking care of you after surgery</label>
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Relationship</label>
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Home Phone</label>
+                    <input type="tel" class="form-control" placeholder=""/>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Work Phone</label>
+                    <input type="tel" class="form-control" placeholder="Father" />
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <label for="" class="control-label">Mobile Phone</label>
+                    <input type="tel" class="form-control" placeholder="Father" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <h6>Social History</h6>
+        <div class="card form-group">
+          <form action="">
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-md-12 col-lg-12">
+                  <div class="form-group">
+                    <label for="" class="control-label">Occupation</label>
+                    <input type="text" class="form-control" placeholder="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-md-12 col-lg-12">
+                  <h6>Civil Status</h6>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Single
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Married
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Widowed
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Divorced
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Civil Union
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-md-12 col-lg-12">
+                  <h6>Alcohol Use</h6>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-md-12 col-lg-12">
+                  <h6>Tobacco Use</h6>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Yes
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">No
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <div class="form-group form-check-inline">
+                    <span for="text">Per day</span>&nbsp;
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <div class="form-group form-check-inline">
+                    <span for="text">Years</span>&nbsp;
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-md-12 col-lg-12">
+                  <h6>Current os past recreational drug use</h6>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                  <div class="form-check-inline">
+                    <label class="control-label"></label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row">
+                <div class="col-md-12 col-lg-12">
+                  <h6>Cannabis use</h6>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Daily
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="">Occasional
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <h6>Have you ever had</h6>
+          <div class="card form-group">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <div id="accordion">
+                    <div class="card">
+                      <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#General">
+                          General
+                        </a>
+                      </div>
+                      <div id="General" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-8 col-lg-8">
+                              <p>Changes in physical activity</p>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                              <div class="">
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Yes
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">No
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                              <p>Recent changes in health</p>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                              <div class="">
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Yes
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">No
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                              <p>Personal or family history of trouble with anesthesia</p>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                              <div class="">
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Yes
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">No
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                  <div id="accordion2">
+                    <div class="card">
+                      <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#Gasterointestinal">
+                          Gasterointestinal
+                        </a>
+                      </div>
+                      <div id="Gasterointestinal" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-8 col-lg-8">
+                              <p>Loose teeth</p>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                              <div class="">
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Yes
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">No
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                              <p>Dentures</p>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                              <div class="">
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Yes
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">No
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                              <p>Difficulty breathing through nose</p>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                              <div class="">
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Yes
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">No
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                              <p>Difficulty hearing</p>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                              <div class="">
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Yes
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">No
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                              <p>Difficulty seeing</p>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                              <div class="">
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Yes
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">No
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                              <p>Use of glasses</p>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                              <div class="">
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Yes
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">No
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                              <p>Trouble with dry eyes</p>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                              <div class="">
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">Yes
+                                  </label>
+                                </div>
+                                <div class="form-check-inline">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" value="">No
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Vasectomy</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Hysterectomy</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Hernia repair</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Heart surgery</p>
+                  <div class="form-group">
+                    <input type="date" class="form-control" placeholder="Year of Surgery">
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Colonoscopy</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Gallbladder surgery</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Pacemaker/Defibrillator </p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Gastroscopy</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Angioplasty</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Cataract surgery</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Appendectomy</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Bone/joint surgery</p>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="text" placeholder="Bone" class="form-control">
+                      </div>
+                      <div class="col-md-6">
+                        <input type="text" placeholder="Joint" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Removal of ovaries</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Tubal ligation (tubes tied)</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Axillary nodal dissection</p>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Right
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Left
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Both
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                  <p>Other surgery:</p>
+                  <div class="form-group">
+                    <input type="text" placeholder="" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                  <div class="">
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">Yes
+                      </label>
+                    </div>
+                    <div class="form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="">No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </mat-step>
+    </mat-stepper>
+  </div>
+</div>
