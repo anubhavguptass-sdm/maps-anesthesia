@@ -37,6 +37,7 @@ import { PreAnestheticInstructionsComponent } from './pre-anesthetic-instruction
 import { PreAnestheticInstructionsEditComponent } from './pre-anesthetic-instructions-edit/pre-anesthetic-instructions-edit.component';
 import { PatientAppointmentComponent } from './patient-appointment/patient-appointment.component';
 import {MatStepperModule} from '@angular/material/stepper';
+import { PediatricPreoperativeComponent } from './admin/pediatric-preoperative/pediatric-preoperative.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     ConsentForAnesthesiaComponent,
     PreAnestheticInstructionsComponent,
     PreAnestheticInstructionsEditComponent,
-    PatientAppointmentComponent
+    PatientAppointmentComponent,
+    PediatricPreoperativeComponent
   ],
   imports: [
     BrowserModule,
