@@ -65,7 +65,7 @@
             p {
                 margin-bottom: 10px;
             }
-            h6{
+            h6 {
                 font-weight: $bold;
                 margin: 0;
             }
@@ -103,7 +103,7 @@
             margin-bottom: 10px;
         }
         .upload-img {
-            position: relative;    
+            position: relative;
             width: 25px;
             overflow: hidden;
             margin: auto;
@@ -130,18 +130,23 @@
     }
 }
 .payment-form {
-    .mat-stepper-horizontal, .mat-stepper-vertical {
+    .mat-stepper-horizontal,
+    .mat-stepper-vertical {
         background-color: rgba(61, 57, 137, 0.03);
     }
     .payment-form .mat-stepper-horizontal .mat-horizontal-content-container {
         padding: 0px;
-    } 
+    }
     .card.bg-gray {
         background: rgba(61, 57, 137, 0.03);
     }
     .card {
         .card-body.border-bottom {
             border-bottom: 1px solid rgba(31, 29, 102, 0.2);
+        }
+        h6,
+        p {
+            margin-bottom: 0;
         }
     }
     table {
@@ -171,5 +176,95 @@
     }
     .mr_2 {
         margin-right: 2rem;
+    }
+}
+.payment_card_1 {
+    display: flex;
+    justify-content: space-around;
+    .card_one {
+        background: rgba(61, 57, 137, 0.1);
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-align: center;
+        width: 40%;
+        p {
+            color: #130f26;
+            strong {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    .card_two {
+        background: rgba(61, 57, 137, 0.1);
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-align: center;
+        width: 56%;
+        p {
+            color: #130f26;
+            font-size: 1rem;
+            strong {
+                font-size: 18px;
+            }
+            img {
+                height: 16px;
+                margin-right: 0.25rem;
+            }
+        }
+    }
+}
+.payment_card_2 {
+    h6 {
+        font-size: 18px;
+        margin-bottom: 1rem !important;
+    }
+    p {
+        border-bottom: 2px solid rgba(61, 57, 137, 0.1);;
+        border-radius: 10px;
+        margin-bottom: 0.75rem !important;
+        padding-bottom: 0.75rem;
+        display: flex;
+        justify-content: space-between;
+        strong {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        &:nth-last-child(1) {
+            border-bottom: none;
+        }
+    }
+}
+.payment_card_3 {
+    .pay_detail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        .card_two {
+            background: rgba(61, 57, 137, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: left;
+            width: 30%;
+            p {
+                color: #130f26;
+                font-size: 1rem;
+                strong {
+                    font-size: 18px;
+                }
+                img {
+                    height: 16px;
+                    margin-right: 0.25rem;
+                }
+            }
+        }
+        .deposit_mand {
+            text-align: right;
+            p {
+                strong {
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }
